@@ -45,7 +45,35 @@ void final(int n, int *xf, int *yf){
   }
 }
 
-void generator2(int n, int *x, int *y){
+void writeFile(int n, int *xx, int *yy, char *fileName){
+    FILE *file_out = fopen(fileName, "a+");
+    int j = 0;
+    fprintf(file_out, "(");
+    for (j = 0; j < n; j++){
+        if (xx[j] == 0){
+            fprintf(file_out, "!x%d", j);
+        }else{
+            fprintf(file_out, "x%d", j);
+        }
+        
+        fprintf(file_out, " & ");
+        
+        if (yy[j] == 0){
+            fprintf(file_out, "!y%d", j);
+        }else{
+            fprintf(file_out, "y%d", j);
+        }
+        
+        if (j + 1 < n){
+            fprintf(file_out, " & ");
+        }
+    }
+    
+    fprintf(file_out, ") | \n");
+    fclose(file_out);
+}
+
+void generator2(int n, int *x, int *y, char *fileName){
 
   int i = 0;
 
@@ -67,32 +95,10 @@ void generator2(int n, int *x, int *y){
 
 	  yy[j] = y[j];
 	}
-	FILE *file_out = fopen("./boolTmp", "a+");
-
-	fprintf(file_out, "(");
-	for (j = 0; j < n; j++){
-	  if (xx[j] == 0){
-	    fprintf(file_out, "!x%d", j);
-	  }else{
-	    fprintf(file_out, "x%d", j);
-	  }
-      
-	  fprintf(file_out, " & ");
-
-	  if (yy[j] == 0){
-	    fprintf(file_out, "!y%d", j);
-	  }else{
-	    fprintf(file_out, "y%d", j);
-	  }
-
-	  if (j + 1 < n){
-	    fprintf(file_out, " & ");
-	  }
-	}
-  
-	fprintf(file_out, ") | \n");
-    fclose(file_out);
-	generator2(n, xx, yy);
+	
+    writeFile(n, xx, yy, fileName);
+          
+	generator2(n, xx, yy, fileName);
       }
     }
   }
@@ -115,32 +121,10 @@ void generator2(int n, int *x, int *y){
 
 	  xx[j] = x[j];
 	}
-	FILE *file_out = fopen("./boolTmp", "a+");
-
-	fprintf(file_out, "(");
-	for (j = 0; j < n; j++){
-	  if (xx[j] == 0){
-	    fprintf(file_out, "!x%d", j);
-	  }else{
-	    fprintf(file_out, "x%d", j);
-	  }
-      
-	  fprintf(file_out, " & ");
-
-	  if (yy[j] == 0){
-	    fprintf(file_out, "!y%d", j);
-	  }else{
-	    fprintf(file_out, "y%d", j);
-	  }
-
-	  if (j + 1 < n){
-	    fprintf(file_out, " & ");
-	  }
-	}
-  
-	fprintf(file_out, ") | \n");
-    fclose(file_out);
-	generator2(n, xx, yy);
+	
+          writeFile(n, xx, yy, fileName);
+          
+	generator2(n, xx, yy, fileName);
       }
     }
   }
@@ -163,32 +147,10 @@ void generator2(int n, int *x, int *y){
                     
                     yy[j] = y[j];
                 }
-                FILE *file_out = fopen("./boolTmp", "a+");
                 
-                fprintf(file_out, "(");
-                for (j = 0; j < n; j++){
-                    if (xx[j] == 0){
-                        fprintf(file_out, "!x%d", j);
-                    }else{
-                        fprintf(file_out, "x%d", j);
-                    }
-                    
-                    fprintf(file_out, " & ");
-                    
-                    if (yy[j] == 0){
-                        fprintf(file_out, "!y%d", j);
-                    }else{
-                        fprintf(file_out, "y%d", j);
-                    }
-                    
-                    if (j + 1 < n){
-                        fprintf(file_out, " & ");
-                    }
-                }
+                writeFile(n, xx, yy, fileName);
                 
-                fprintf(file_out, ") | \n");
-                fclose(file_out);
-                generator2(n, xx, yy);
+                generator2(n, xx, yy, fileName);
             }
         }
     }
@@ -211,40 +173,19 @@ void generator2(int n, int *x, int *y){
                     
                     xx[j] = x[j];
                 }
-                FILE *file_out = fopen("./boolTmp", "a+");
                 
-                fprintf(file_out, "(");
-                for (j = 0; j < n; j++){
-                    if (xx[j] == 0){
-                        fprintf(file_out, "!x%d", j);
-                    }else{
-                        fprintf(file_out, "x%d", j);
-                    }
-                    
-                    fprintf(file_out, " & ");
-                    
-                    if (yy[j] == 0){
-                        fprintf(file_out, "!y%d", j);
-                    }else{
-                        fprintf(file_out, "y%d", j);
-                    }
-                    
-                    if (j + 1 < n){
-                        fprintf(file_out, " & ");
-                    }
-                }
+                writeFile(n, xx, yy, fileName);
                 
-                fprintf(file_out, ") | \n");
-                fclose(file_out);
-                generator2(n, xx, yy);
+                generator2(n, xx, yy, fileName);
             }
         }
     }
 
 }
 
-void writeInit(int n,int *x, int *y){
-    FILE *file_out = fopen("./boolTmp", "a+");
+
+void writeInit(int n,int *x, int *y, char * fileName){
+    FILE *file_out = fopen(fileName, "a+");
     
     fprintf(file_out, "(");
     int j;
@@ -273,8 +214,8 @@ void writeInit(int n,int *x, int *y){
 
 }
 
-void writeFinal(int n, int *x, int *y){
-    FILE *file_out = fopen("./boolTmp", "a+");
+void writeFinal(int n, int *x, int *y, char *fileName){
+    FILE *file_out = fopen(fileName, "a+");
     
     fprintf(file_out, "(");
     int j;
@@ -301,17 +242,18 @@ void writeFinal(int n, int *x, int *y){
     fclose(file_out);
 }
 
-void generator3(int n, int *initx, int *inity, int *finalx, int *finaly){
-    FILE *file_out = fopen("./boolTmp", "w");
+void generator3(int n, int *initx, int *inity, int *finalx, int *finaly, char *fileName){
+    FILE *file_out = fopen(fileName, "w");
     fclose(file_out);
     
-    writeInit(n, initx, inity);
-    generator2(n, initx, inity);
-    writeFinal(n, finalx, finaly);
+    writeInit(n, initx, inity, fileName);
+    generator2(n, initx, inity, fileName);
+    writeFinal(n, finalx, finaly, fileName);
 }
 
 int main(int argc, char ** argv){
     int n = atoi(argv[1]);
+    char *fileName = argv[2];
     
     int *x = malloc(sizeof(int)*n);
     int *y = malloc(sizeof(int)*n);
@@ -321,7 +263,7 @@ int main(int argc, char ** argv){
   init(n, x, y);
   final(n, xf, yf);
     
-    generator3(n, x, y, xf, yf);
+    generator3(n, x, y, xf, yf, fileName);
     
   return 0;
 }
