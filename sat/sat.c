@@ -3,6 +3,16 @@
 #include <string.h>
 #include <unistd.h>
 
+/**********RUN*********
+ 
+ % gcc -o sat sat.c
+ % ./sat <nbPierre>
+ 
+ avec nbPierre: nombre de pierres
+ output: file boolTmp
+ 
+ */
+
 void init(int n, int *x, int *y){
   int i = 0;
   for (i = 0; i < n; i++){
@@ -289,11 +299,19 @@ void writeFinal(int n, int *x, int *y){
     }
     fprintf(file_out, ")\n");
     fclose(file_out);
+}
+
+void generator3(int n, int *initx, int *inity, int *finalx, int *finaly){
+    FILE *file_out = fopen("./boolTmp", "w");
+    fclose(file_out);
     
+    writeInit(n, initx, inity);
+    generator2(n, initx, inity);
+    writeFinal(n, finalx, finaly);
 }
 
 int main(int argc, char ** argv){
-    int n = 7;
+    int n = atoi(argv[1]);
     
     int *x = malloc(sizeof(int)*n);
     int *y = malloc(sizeof(int)*n);
@@ -303,34 +321,7 @@ int main(int argc, char ** argv){
   init(n, x, y);
   final(n, xf, yf);
     
-    /*
-  int i = 0;
-  for (i = 0; i < n; i++){
-    printf(" %d ", x[i]);
-  } 
-
-  printf("\n");
-   for (i = 0; i < n; i++){
-    printf(" %d ", y[i]);
-  }
-
-   printf("\n");
- for (i = 0; i < n; i++){
-    printf(" %d ", xf[i]);
-  } 
-
-  printf("\n");
-   for (i = 0; i < n; i++){
-    printf(" %d ", yf[i]);
-  }
-
-   printf("\n");
-*/
-    FILE *file_out = fopen("./boolTmp", "w");
-    fclose(file_out);
-    writeInit(n, x, y);
-   generator2(n, x, y);
-    writeFinal(n, xf, yf);
-
+    generator3(n, x, y, xf, yf);
+    
   return 0;
 }
