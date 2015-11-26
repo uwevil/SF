@@ -615,9 +615,7 @@ int main(int argc, char ** argv){
     */
     
     generator3((nx + ny + 1), x, y, xf, yf, fileName);
-   
-    printf("%s", fileName);
-    
+       
     strcat(fileName, "_1");
     
     if (generator4Bis((nx + ny + 1), x, y, xf, yf, step, fileName) == 0){
