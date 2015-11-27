@@ -11,70 +11,296 @@ Var
 <attribute name='version' xposition='0' yposition='0'>0,0</attribute>
 </attributes>
 <nodes>
-<node nodetype='place' id ='3' xposition='331' yposition='133' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='transition' id ='71' xposition='269' yposition='194' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='marking' xposition='228' yposition='172'>&lt;C.all&gt;</attribute>
-<attribute name='domain' xposition='247' yposition='154'>C</attribute>
-<attribute name='name' xposition='187' yposition='135'>ThinkingPhilosophers</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='4' xposition='561' yposition='133' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='14' xposition='172' yposition='259' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='domain' xposition='636' yposition='154'>C</attribute>
-<attribute name='name' xposition='581' yposition='133'>EatingPhilosophers</attribute>
 </attributes>
 </node>
-<node nodetype='transition' id ='5' xposition='441' yposition='61' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='15' xposition='80' yposition='310' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='444' yposition='42'>eat</attribute>
+<attribute name='name' xposition='71' yposition='286'>demA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='6' xposition='446' yposition='133' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='16' xposition='172' yposition='366' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='marking' xposition='465' yposition='133'>&lt;C.all&gt;</attribute>
-<attribute name='domain' xposition='424' yposition='135'>C</attribute>
-<attribute name='name' xposition='407' yposition='120'>Forks</attribute>
 </attributes>
 </node>
-<node nodetype='transition' id ='7' xposition='441' yposition='219' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='17' xposition='80' yposition='428' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='437' yposition='232'>think</attribute>
+<attribute name='name' xposition='51' yposition='404'>capacitePont</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='18' xposition='80' yposition='482' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='76' yposition='460'>okA</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='19' xposition='172' yposition='527' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='place' id ='20' xposition='80' yposition='597' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='place' id ='21' xposition='275' yposition='597' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='place' id ='22' xposition='315' yposition='428' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='293' yposition='448'>NaltA</attribute>
+</attributes>
+</node>
+<node nodetype='transition' id ='23' xposition='167' yposition='314' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='transition' id ='24' xposition='167' yposition='432' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='transition' id ='25' xposition='167' yposition='601' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='place' id ='34' xposition='80' yposition='527' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='56' yposition='506'>okPont</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='39' xposition='645' yposition='428' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='665' yposition='416'>NaltB</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='40' xposition='645' yposition='597' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='transition' id ='41' xposition='737' yposition='432' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='transition' id ='42' xposition='737' yposition='601' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='transition' id ='45' xposition='426' yposition='601' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='transition' id ='48' xposition='403' yposition='496' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='transition' id ='49' xposition='403' yposition='432' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='place' id ='54' xposition='570' yposition='235' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='place' id ='55' xposition='494' yposition='341' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='transition' id ='58' xposition='565' yposition='345' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='transition' id ='59' xposition='489' yposition='239' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='transition' id ='60' xposition='403' yposition='345' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='place' id ='61' xposition='408' yposition='235' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
 </attributes>
 </node>
 </nodes>
 <arcs>
-<arc arctype='arc' id='8' startid='3' endid='5' color='#000000' curved='false'>
-<pi xposition='338' yposition='64'/>
+<arc arctype='arc' id='64' startid='54' endid='59' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='355' yposition='57'>&lt;X&gt;</attribute>
+<attribute name='valuation' xposition='436' yposition='247'>1</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='9' startid='6' endid='5' color='#000000' curved='false'>
+<arc arctype='inhibitor' id='65' startid='55' endid='59' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='414' yposition='92'>&lt;X&gt;  + &lt;X++1&gt;</attribute>
+<attribute name='valuation' xposition='436' yposition='300'>1</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='10' startid='5' endid='4' color='#000000' curved='false'>
-<pi xposition='568' yposition='64'/>
+<arc arctype='arc' id='66' startid='59' endid='61' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='525' yposition='57'>&lt;X&gt;</attribute>
+<attribute name='valuation' xposition='411' yposition='275'>1</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='11' startid='4' endid='7' color='#000000' curved='false'>
-<pi xposition='568' yposition='223'/>
+<arc arctype='arc' id='67' startid='61' endid='60' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='525' yposition='215'>&lt;X&gt;</attribute>
+<attribute name='valuation' xposition='403' yposition='307'>1</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='12' startid='7' endid='6' color='#000000' curved='false'>
+<arc arctype='arc' id='68' startid='60' endid='55' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='414' yposition='184'>&lt;X&gt;  + &lt;X++1&gt;</attribute>
+<attribute name='valuation' xposition='429' yposition='332'>1</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='13' startid='7' endid='3' color='#000000' curved='false'>
-<pi xposition='338' yposition='221'/>
+<arc arctype='inhibitor' id='69' startid='22' endid='60' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='355' yposition='215'>&lt;X&gt;</attribute>
+<attribute name='valuation' xposition='324' yposition='386'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='inhibitor' id='70' startid='21' endid='60' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='324' yposition='471'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='72' startid='54' endid='71' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='405' yposition='214'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='inhibitor' id='73' startid='22' endid='71' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='272' yposition='311'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='inhibitor' id='74' startid='21' endid='71' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='272' yposition='395'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='75' startid='71' endid='55' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='381' yposition='267'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='26' startid='14' endid='23' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='164' yposition='313'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='27' startid='23' endid='16' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='166' yposition='349'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='28' startid='16' endid='24' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='165' yposition='387'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='29' startid='24' endid='19' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='167' yposition='430'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='30' startid='19' endid='25' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='170' yposition='469'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='31' startid='15' endid='23' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='122' yposition='335'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='32' startid='17' endid='24' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='122' yposition='417'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='33' startid='24' endid='18' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='122' yposition='441'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='35' startid='24' endid='34' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='131' yposition='456'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='36' startid='20' endid='25' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='125' yposition='520'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='37' startid='25' endid='21' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='207' yposition='523'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='38' startid='22' endid='24' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='222' yposition='396'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='43' startid='39' endid='41' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='615' yposition='436'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='44' startid='42' endid='40' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='640' yposition='599'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='46' startid='21' endid='45' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='315' yposition='607'>Nalt
+</attribute>
+</attributes>
+</arc>
+<arc arctype='inhibitor' id='47' startid='22' endid='45' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='370' yposition='511'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='50' startid='22' endid='49' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='324' yposition='433'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='51' startid='21' endid='48' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='373' yposition='563'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='52' startid='49' endid='39' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='499' yposition='430'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='53' startid='48' endid='39' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='499' yposition='462'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='inhibitor' id='56' startid='55' endid='49' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='419' yposition='386'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='inhibitor' id='57' startid='55' endid='48' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='419' yposition='418'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='62' startid='55' endid='58' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='488' yposition='321'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='63' startid='58' endid='54' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='488' yposition='268'>1</attribute>
 </attributes>
 </arc>
 </arcs>
