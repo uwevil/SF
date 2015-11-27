@@ -12,59 +12,67 @@ Var a in VAA;</attribute>
 <attributes>
 <attribute name='marking' xposition='277' yposition='143'>&lt;VAA.all&gt;</attribute>
 <attribute name='domain' xposition='292' yposition='122'>VAA</attribute>
-<attribute name='name' xposition='292' yposition='100'>vehicule</attribute>
+<attribute name='name' xposition='292' yposition='100'>VehiculeA</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='4' xposition='353' yposition='239' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='235' yposition='240'>AttenteAutorisationA</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='5' xposition='348' yposition='195' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='298' yposition='192'>demA</attribute>
+<attribute name='name' xposition='229' yposition='192'>demanderEntrerA</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='6' xposition='501' yposition='191' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='521' yposition='186'>CommunicationControlleurA</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='7' xposition='353' yposition='336' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='271' yposition='337'>AttentePontA</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='8' xposition='501' yposition='291' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='521' yposition='286'>AutorisationControlleurA</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='9' xposition='502' yposition='379' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='522' yposition='374'>AutorisationPontA</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='10' xposition='353' yposition='430' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='277' yposition='431'>DansPontA</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='11' xposition='348' yposition='295' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='303' yposition='292'>okA</attribute>
+<attribute name='name' xposition='286' yposition='292'>peutEntrerA</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='12' xposition='348' yposition='383' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='295' yposition='380'>okPont</attribute>
+<attribute name='name' xposition='295' yposition='380'>okPontA</attribute>
 </attributes>
 </node>
-<node nodetype='transition' id ='13' xposition='348' yposition='482' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='transition' id ='13' xposition='348' yposition='505' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='303' yposition='507'>sortePont</attribute>
+<attribute name='name' xposition='303' yposition='530'>sortPontA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='14' xposition='501' yposition='478' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='14' xposition='501' yposition='501' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='521' yposition='496'>AuRevoirControlleurA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='27' xposition='502' yposition='519' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='27' xposition='502' yposition='542' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='522' yposition='537'>AuRevoirPontA</attribute>
 </attributes>
 </node>
 </nodes>
@@ -90,10 +98,9 @@ Var a in VAA;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='19' startid='13' endid='3' color='#000000' curved='true'>
-<pi xposition='291' yposition='487'/>
-<pi xposition='291' yposition='307'/>
+<pi xposition='462' yposition='306'/>
 <attributes>
-<attribute name='valuation' xposition='133' yposition='437'>1</attribute>
+<attribute name='valuation' xposition='421' yposition='240'>&lt;a&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='20' startid='8' endid='11' color='#000000' curved='true'>

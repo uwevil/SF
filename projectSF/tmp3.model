@@ -2,9 +2,12 @@
 <model xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='http://coloane.lip6.fr/resources/schemas/model.xsd' formalism='Colored Petri Net' xposition='0' yposition='0'>
 <attributes>
 <attribute name='note' xposition='0' yposition='0'>Designed with Coloane</attribute>
-<attribute name='title' xposition='16' yposition='9'>VAA</attribute>
-<attribute name='declaration' xposition='16' yposition='36'>Class VAA is 1..n;
-Var a in VAA;</attribute>
+<attribute name='title' xposition='20' yposition='157'>Philosophers</attribute>
+<attribute name='declaration' xposition='20' yposition='184'>Class
+ C is 1..5;
+
+Var
+ X in C;</attribute>
 <attribute name='version' xposition='0' yposition='0'>0,0</attribute>
 </attributes>
 <nodes>
@@ -38,21 +41,8 @@ Var a in VAA;</attribute>
 <attribute name='name' xposition='437' yposition='232'>think</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='14' xposition='118' yposition='257' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-</attributes>
-</node>
-<node nodetype='transition' id ='15' xposition='184' yposition='354' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-</attributes>
-</node>
 </nodes>
 <arcs>
-<arc arctype='arc' id='16' startid='14' endid='15' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='180' yposition='323'>1</attribute>
-</attributes>
-</arc>
 <arc arctype='arc' id='8' startid='3' endid='5' color='#000000' curved='false'>
 <pi xposition='338' yposition='64'/>
 <attributes>
