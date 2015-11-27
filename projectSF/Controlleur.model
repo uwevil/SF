@@ -3,11 +3,8 @@
 <attributes>
 <attribute name='note' xposition='0' yposition='0'>Designed with Coloane</attribute>
 <attribute name='title' xposition='46' yposition='19'>Philosophers</attribute>
-<attribute name='declaration' xposition='46' yposition='46'>Class
- C is 1..5;
-
-Var
- X in C;</attribute>
+<attribute name='declaration' xposition='40' yposition='38'>Class C is 1..5;
+Var X in C;</attribute>
 <attribute name='version' xposition='29' yposition='0'>0,0</attribute>
 </attributes>
 <nodes>
