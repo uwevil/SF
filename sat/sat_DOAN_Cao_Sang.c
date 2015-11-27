@@ -18,14 +18,14 @@
 
 //*****************************QUESTION 1************************************//
 void init(int nx, int ny, int *x, int *y){
-  int i = 0;
-  for (i = 0; i < nx + ny + 1; i++){
-    if (i < nx){
-      x[i] = 1;
-    }else{
-       x[i] = 0;
+    int i = 0;
+    for (i = 0; i < nx + ny + 1; i++){
+        if (i < nx){
+            x[i] = 1;
+        }else{
+            x[i] = 0;
+        }
     }
-  }
     for (i = nx + ny; i >= 0; i--){
         if (i > nx){
             y[i] = 1;
@@ -37,14 +37,14 @@ void init(int nx, int ny, int *x, int *y){
 
 //*****************************QUESTION 2************************************//
 void final(int nx, int ny, int *xf, int *yf){
-  int i = 0;
-  for (i = nx + ny; i >= 0; i--){
-    if (i > ny){
-      xf[i] = 1;
-    }else{
-       xf[i] = 0;
+    int i = 0;
+    for (i = nx + ny; i >= 0; i--){
+        if (i > ny){
+            xf[i] = 1;
+        }else{
+            xf[i] = 0;
+        }
     }
-  }
     
     for (i = 0; i < nx + ny + 1; i++){
         if (i < ny){
@@ -84,60 +84,60 @@ void writeFile(int n, int *xx, int *yy, char *fileName){
 }
 
 void generator2(int n, int *x, int *y, char *fileName){
-
-  int i = 0;
-
+    
+    int i = 0;
+    
     //*********************************//
-  for (i = 0; i < n; i++){
-    if (i + 1 < n){
-      if (x[i] == 1 && x[i + 1] == 0 && y[i + 1] == 0){
-	int *xx = malloc(sizeof(int)*n);
-	int *yy = malloc(sizeof(int)*n);
-
-	int j = 0;
-	for (j = 0; j < n; j++){
-	  if (j == i){
-	    xx[j] = 0;
-	    xx[j + 1] = 1;
-	  }else if (j != i + 1){
-	    xx[j] = x[j];
-	  }
-
-	  yy[j] = y[j];
-	}
-	
-    writeFile(n, xx, yy, fileName);
-          
-	generator2(n, xx, yy, fileName);
-      }
+    for (i = 0; i < n; i++){
+        if (i + 1 < n){
+            if (x[i] == 1 && x[i + 1] == 0 && y[i + 1] == 0){
+                int *xx = malloc(sizeof(int)*n);
+                int *yy = malloc(sizeof(int)*n);
+                
+                int j = 0;
+                for (j = 0; j < n; j++){
+                    if (j == i){
+                        xx[j] = 0;
+                        xx[j + 1] = 1;
+                    }else if (j != i + 1){
+                        xx[j] = x[j];
+                    }
+                    
+                    yy[j] = y[j];
+                }
+                
+                writeFile(n, xx, yy, fileName);
+                
+                generator2(n, xx, yy, fileName);
+            }
+        }
     }
-  }
-
+    
     //*****************************************//
-  for (i = n -1; i >= 0; i--){
-     if (i - 1 >= 0){
-      if (y[i] == 1 && y[i - 1] == 0 && x[i - 1] == 0){
-	int *xx = malloc(sizeof(int)*n);
-	int *yy = malloc(sizeof(int)*n);
-
-	int j = 0;
-	for (j = 0; j < n; j++){
-	  if (j == i){
-	    yy[j] = 0;
-	    yy[j - 1] = 1;
-	  }else if (j != i - 1){
-	    yy[j] = y[j];
-	  }
-
-	  xx[j] = x[j];
-	}
-	
-          writeFile(n, xx, yy, fileName);
-          
-	generator2(n, xx, yy, fileName);
-      }
+    for (i = n -1; i >= 0; i--){
+        if (i - 1 >= 0){
+            if (y[i] == 1 && y[i - 1] == 0 && x[i - 1] == 0){
+                int *xx = malloc(sizeof(int)*n);
+                int *yy = malloc(sizeof(int)*n);
+                
+                int j = 0;
+                for (j = 0; j < n; j++){
+                    if (j == i){
+                        yy[j] = 0;
+                        yy[j - 1] = 1;
+                    }else if (j != i - 1){
+                        yy[j] = y[j];
+                    }
+                    
+                    xx[j] = x[j];
+                }
+                
+                writeFile(n, xx, yy, fileName);
+                
+                generator2(n, xx, yy, fileName);
+            }
+        }
     }
-  }
     
     //********************************************//
     for (i = 0; i < n; i++){
@@ -164,7 +164,7 @@ void generator2(int n, int *x, int *y, char *fileName){
             }
         }
     }
-
+    
     //*****************************************//
     for (i = n -1; i >= 0; i--){
         if (i - 2 >= 0){
@@ -190,7 +190,7 @@ void generator2(int n, int *x, int *y, char *fileName){
             }
         }
     }
-
+    
 }
 
 
@@ -221,7 +221,7 @@ void writeInit(int n,int *x, int *y, char * fileName){
     
     fprintf(file_out, ") | \n");
     fclose(file_out);
-
+    
 }
 
 void writeFinal(int n, int *x, int *y, char *fileName){
@@ -411,7 +411,7 @@ int generator4(int n, int *initx, int *inity, int *finalx, int *finaly, int curr
             }
         }
     }
-
+    
     return 1;
 }
 
@@ -593,34 +593,34 @@ int main(int argc, char ** argv){
     int *xf = malloc(sizeof(int)*(nx + ny + 1));
     int *yf = malloc(sizeof(int)*(nx + ny + 1));
     
-  init(nx, ny, x, y);
-  final(nx, ny, xf, yf);
-  /*
-    int i = 0;
+    init(nx, ny, x, y);
+    final(nx, ny, xf, yf);
+    /*
+     int i = 0;
      for (i = 0; i < nx + ny + 1; i++){
-            printf(" %d ", x[i]);
-          }
-    
-      printf("\n");
-       for (i = 0; i < nx + ny + 1; i++){
-            printf(" %d ", y[i]);
-          }
-    
-       printf("\n");
+     printf(" %d ", x[i]);
+     }
+     
+     printf("\n");
+     for (i = 0; i < nx + ny + 1; i++){
+     printf(" %d ", y[i]);
+     }
+     
+     printf("\n");
      for (i = 0; i < (nx + ny + 1); i++){
-            printf(" %d ", xf[i]);
-          }
-    
-      printf("\n");
-       for (i = 0; i < (nx + ny + 1); i++){
-            printf(" %d ", yf[i]);
-          }
-    
-       printf("\n");
-    */
+     printf(" %d ", xf[i]);
+     }
+     
+     printf("\n");
+     for (i = 0; i < (nx + ny + 1); i++){
+     printf(" %d ", yf[i]);
+     }
+     
+     printf("\n");
+     */
     
     generator3((nx + ny + 1), x, y, xf, yf, fileName);
-       
+    
     strcat(fileName, "_1");
     
     if (generator4Bis((nx + ny + 1), x, y, xf, yf, step, fileName) == 0){
@@ -634,5 +634,5 @@ int main(int argc, char ** argv){
     int res = generator5Bis((nx + ny + 1), x, y, xf, yf, fileName);
     printf("%d steps to success\n", res);
     
-  return 0;
+    return 0;
 }

@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<model xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='http://coloane.lip6.fr/resources/schemas/model.xsd' formalism='Colored Petri Net' xposition='0' yposition='0'>
+<attributes>
+<attribute name='note' xposition='0' yposition='0'>Designed with Coloane</attribute>
+<attribute name='title' xposition='21' yposition='13'>Pont</attribute>
+<attribute name='declaration' xposition='21' yposition='40'>Class PONT is 1..CapaP;
+Var p in PONT;</attribute>
+<attribute name='version' xposition='0' yposition='0'>0,0</attribute>
+</attributes>
+<nodes>
+<node nodetype='place' id ='32' xposition='268' yposition='445' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='243' yposition='426'>VehiculeOut</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='14' xposition='386' yposition='139' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='marking' xposition='302' yposition='115'>&lt;PONT.all&gt;</attribute>
+<attribute name='domain' xposition='302' yposition='100'>PONT</attribute>
+<attribute name='name' xposition='302' yposition='85'>CapacitePont</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='15' xposition='386' yposition='271' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='place' id ='16' xposition='515' yposition='333' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='535' yposition='328'>ControlleurOk</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='17' xposition='268' yposition='333' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='245' yposition='317'>VehiculeIn</attribute>
+</attributes>
+</node>
+<node nodetype='transition' id ='19' xposition='381' yposition='209' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+<node nodetype='transition' id ='20' xposition='382' yposition='337' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='334' yposition='317'>inOk</attribute>
+</attributes>
+</node>
+<node nodetype='transition' id ='21' xposition='382' yposition='449' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='377' yposition='465'>outOk</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='24' xposition='515' yposition='205' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='535' yposition='200'>ControlleurCapacite</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='31' xposition='387' yposition='393' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+</attributes>
+</node>
+</nodes>
+<arcs>
+<arc arctype='arc' id='34' startid='20' endid='31' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='189' yposition='512'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='35' startid='31' endid='21' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='186' yposition='568'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='36' startid='32' endid='21' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='127' yposition='594'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='37' startid='21' endid='14' color='#000000' curved='true'>
+<pi xposition='476' yposition='301'/>
+<attributes>
+<attribute name='valuation' xposition='186' yposition='441'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='25' startid='14' endid='19' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='383' yposition='164'>&lt;p&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='26' startid='19' endid='15' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='185' yposition='357'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='27' startid='19' endid='24' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='247' yposition='335'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='28' startid='15' endid='20' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='186' yposition='451'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='29' startid='20' endid='17' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='127' yposition='482'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='30' startid='16' endid='20' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='250' yposition='482'>1</attribute>
+</attributes>
+</arc>
+</arcs>
+<stickys>
+</stickys>
+</model>
