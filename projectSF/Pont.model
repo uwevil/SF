@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <model xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='http://coloane.lip6.fr/resources/schemas/model.xsd' formalism='Colored Petri Net' xposition='0' yposition='0'>
 <attributes>
-<attribute name='note' xposition='0' yposition='0'>Designed with Coloane</attribute>
+<attribute name='note' xposition='0' yposition='0'>Designed with DCS</attribute>
 <attribute name='title' xposition='21' yposition='13'>Pont</attribute>
 <attribute name='declaration' xposition='21' yposition='40'>Class PONT is 1..CapaP;
 Var p in PONT;</attribute>
@@ -10,14 +10,14 @@ Var p in PONT;</attribute>
 <nodes>
 <node nodetype='place' id ='3' xposition='268' yposition='481' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='243' yposition='462'>VehiculeSortir</attribute>
+<attribute name='name' xposition='237' yposition='501'>VehiculeSortirA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='4' xposition='386' yposition='139' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='4' xposition='703' yposition='205' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='marking' xposition='302' yposition='115'>&lt;PONT.all&gt;</attribute>
-<attribute name='domain' xposition='302' yposition='100'>PONT</attribute>
-<attribute name='name' xposition='302' yposition='85'>CapacitePont</attribute>
+<attribute name='marking' xposition='619' yposition='181'>&lt;PONT.all&gt;</attribute>
+<attribute name='domain' xposition='619' yposition='166'>PONT</attribute>
+<attribute name='name' xposition='619' yposition='151'>CapacitePont</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='5' xposition='386' yposition='271' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -25,14 +25,14 @@ Var p in PONT;</attribute>
 <attribute name='name' xposition='322' yposition='272'>pause</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='6' xposition='515' yposition='339' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='6' xposition='158' yposition='292' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='535' yposition='334'>OKControlleur</attribute>
+<attribute name='name' xposition='178' yposition='287'>OKControlleurA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='7' xposition='268' yposition='339' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='7' xposition='158' yposition='349' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='245' yposition='323'>VehiculeEntrer</attribute>
+<attribute name='name' xposition='123' yposition='373'>VehiculeEntrerA</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='8' xposition='381' yposition='209' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -40,9 +40,9 @@ Var p in PONT;</attribute>
 <attribute name='name' xposition='268' yposition='206'>notifieCapacite</attribute>
 </attributes>
 </node>
-<node nodetype='transition' id ='9' xposition='382' yposition='343' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='transition' id ='9' xposition='278' yposition='343' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='334' yposition='323'>okEntrer</attribute>
+<attribute name='name' xposition='252' yposition='367'>okEntrerA</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='10' xposition='382' yposition='485' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -50,9 +50,9 @@ Var p in PONT;</attribute>
 <attribute name='name' xposition='377' yposition='501'>okSortir</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='11' xposition='515' yposition='205' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='11' xposition='386' yposition='115' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='535' yposition='200'>CapaciteControlleur</attribute>
+<attribute name='name' xposition='406' yposition='110'>CapaciteControlleur</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='12' xposition='387' yposition='409' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -60,57 +60,102 @@ Var p in PONT;</attribute>
 <attribute name='name' xposition='291' yposition='410'>attenteVehicule</attribute>
 </attributes>
 </node>
+<node nodetype='transition' id ='23' xposition='460' yposition='343' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='459' yposition='367'>okEntrerB</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='24' xposition='577' yposition='292' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='558' yposition='317'>OKControlleurB</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='25' xposition='577' yposition='349' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='546' yposition='367'>VehiculeEntrerB</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='30' xposition='532' yposition='481' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='512' yposition='501'>VehiculeSortirB</attribute>
+</attributes>
+</node>
 </nodes>
 <arcs>
-<arc arctype='arc' id='16' startid='8' endid='11' color='#000000' curved='true'>
+<arc arctype='arc' id='13' startid='8' endid='11' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='247' yposition='335'>1</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='17' startid='5' endid='9' color='#000000' curved='true'>
+<arc arctype='arc' id='14' startid='5' endid='9' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='383' yposition='305'>&lt;p&gt;</attribute>
+<attribute name='valuation' xposition='327' yposition='305'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='18' startid='9' endid='7' color='#000000' curved='true'>
+<arc arctype='arc' id='15' startid='9' endid='7' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='127' yposition='482'>1</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='19' startid='6' endid='9' color='#000000' curved='true'>
+<arc arctype='arc' id='16' startid='6' endid='9' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='250' yposition='482'>1</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='20' startid='9' endid='12' color='#000000' curved='true'>
+<arc arctype='arc' id='17' startid='9' endid='12' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='387' yposition='367'>&lt;p&gt;</attribute>
+<attribute name='valuation' xposition='327' yposition='373'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='21' startid='12' endid='10' color='#000000' curved='true'>
+<arc arctype='arc' id='18' startid='12' endid='10' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='382' yposition='442'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='22' startid='3' endid='10' color='#000000' curved='true'>
+<arc arctype='arc' id='19' startid='3' endid='10' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='127' yposition='594'>1</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='13' startid='10' endid='4' color='#000000' curved='true'>
-<pi xposition='476' yposition='301'/>
+<arc arctype='arc' id='20' startid='10' endid='4' color='#000000' curved='true'>
+<pi xposition='714' yposition='417'/>
 <attributes>
-<attribute name='valuation' xposition='462' yposition='293'>&lt;p&gt;</attribute>
+<attribute name='valuation' xposition='703' yposition='287'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='14' startid='4' endid='8' color='#000000' curved='true'>
+<arc arctype='arc' id='21' startid='4' endid='8' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='383' yposition='175'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='15' startid='8' endid='5' color='#000000' curved='true'>
+<arc arctype='arc' id='22' startid='8' endid='5' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='382' yposition='234'>&lt;p&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='26' startid='5' endid='23' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='424' yposition='307'>&lt;p&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='27' startid='23' endid='12' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='425' yposition='376'>&lt;p&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='28' startid='24' endid='23' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='518' yposition='328'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='29' startid='23' endid='25' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='520' yposition='366'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='31' startid='30' endid='10' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='487' yposition='494'>1</attribute>
 </attributes>
 </arc>
 </arcs>
