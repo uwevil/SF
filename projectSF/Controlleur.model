@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <model xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='http://coloane.lip6.fr/resources/schemas/model.xsd' formalism='Colored Petri Net' xposition='0' yposition='0'>
 <attributes>
-<attribute name='note' xposition='0' yposition='0'>Designed with Coloane</attribute>
+<attribute name='note' xposition='0' yposition='0'>Designed with DCS</attribute>
 <attribute name='title' xposition='42' yposition='19'>Controlleur</attribute>
 <attribute name='declaration' xposition='40' yposition='38'>Class TIMEOUT is 1..TimeOut;
 Var t in TIMEOUT;</attribute>
@@ -13,7 +13,7 @@ Var t in TIMEOUT;</attribute>
 <attribute name='name' xposition='238' yposition='90'>beforeTimeOutA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='4' xposition='109' yposition='229' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='4' xposition='109' yposition='229' scale='100' interface='true' link='/projectSF/VAA.model@6' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
 <attribute name='name' xposition='45' yposition='252'>CommunicationControlleurA</attribute>
 </attributes>
@@ -23,29 +23,29 @@ Var t in TIMEOUT;</attribute>
 <attribute name='name' xposition='129' yposition='286'>VerificationA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='6' xposition='1073' yposition='230' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='6' xposition='1087' yposition='230' scale='100' interface='true' link='/projectSF/VAB.model@6' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='1006' yposition='252'>CommunicationControlleurB</attribute>
+<attribute name='name' xposition='1020' yposition='252'>CommunicationControlleurB</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='7' xposition='109' yposition='347' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='7' xposition='109' yposition='347' scale='100' interface='true' link='/projectSF/Pont.model@11' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
 <attribute name='name' xposition='63' yposition='373'>CapaciteControlleur</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='8' xposition='973' yposition='286' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='8' xposition='987' yposition='286' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='993' yposition='281'>VerificationB</attribute>
+<attribute name='name' xposition='1007' yposition='281'>VerificationB</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='9' xposition='109' yposition='451' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='9' xposition='109' yposition='451' scale='100' interface='true' link='/projectSF/VAA.model@8' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
 <attribute name='name' xposition='7' yposition='471'>AutorisationControlleurA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='10' xposition='1073' yposition='348' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='10' xposition='1087' yposition='348' scale='100' interface='true' link='/projectSF/Pont.model@11' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='1058' yposition='367'>CapaciteControlleur</attribute>
+<attribute name='name' xposition='1072' yposition='367'>CapaciteControlleur</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='11' xposition='201' yposition='554' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -53,19 +53,19 @@ Var t in TIMEOUT;</attribute>
 <attribute name='name' xposition='151' yposition='557'>AttenteA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='12' xposition='1073' yposition='451' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='12' xposition='1087' yposition='451' scale='100' interface='true' link='/projectSF/VAB.model@8' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='1046' yposition='471'>AutorisationControlleurB</attribute>
+<attribute name='name' xposition='1060' yposition='471'>AutorisationControlleurB</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='13' xposition='109' yposition='624' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='13' xposition='109' yposition='624' scale='100' interface='true' link='/projectSF/VAA.model@14' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
 <attribute name='name' xposition='54' yposition='641'>AuRevoirControlleurA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='14' xposition='1073' yposition='519' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='14' xposition='1087' yposition='519' scale='100' interface='true' link='/projectSF/Pont.model@14' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='1046' yposition='540'>OKControlleurB</attribute>
+<attribute name='name' xposition='1060' yposition='540'>OKControlleurB</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='15' xposition='275' yposition='624' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -73,9 +73,9 @@ Var t in TIMEOUT;</attribute>
 <attribute name='name' xposition='260' yposition='641'>AuRevoirA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='16' xposition='973' yposition='555' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='16' xposition='987' yposition='555' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='993' yposition='550'>AttentB</attribute>
+<attribute name='name' xposition='1007' yposition='550'>AttentB</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='17' xposition='315' yposition='347' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -83,9 +83,9 @@ Var t in TIMEOUT;</attribute>
 <attribute name='name' xposition='293' yposition='367'>NaltA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='18' xposition='1073' yposition='625' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='18' xposition='1087' yposition='625' scale='100' interface='true' link='/projectSF/VAB.model@14' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='1023' yposition='641'>AuRevoirControlleurB</attribute>
+<attribute name='name' xposition='1037' yposition='641'>AuRevoirControlleurB</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='19' xposition='196' yposition='233' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -93,9 +93,9 @@ Var t in TIMEOUT;</attribute>
 <attribute name='name' xposition='151' yposition='207'>recoitDemandeA</attribute>
 </attributes>
 </node>
-<node nodetype='transition' id ='20' xposition='968' yposition='234' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='transition' id ='20' xposition='982' yposition='234' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='943' yposition='207'>recoitDemandeB</attribute>
+<attribute name='name' xposition='957' yposition='207'>recoitDemandeB</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='21' xposition='196' yposition='351' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -108,29 +108,29 @@ Var t in TIMEOUT;</attribute>
 <attribute name='name' xposition='190' yposition='640'>sortA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='23' xposition='109' yposition='519' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='23' xposition='109' yposition='519' scale='100' interface='true' link='/projectSF/Pont.model@6' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
 <attribute name='name' xposition='35' yposition='540'>OKControlleurA</attribute>
 </attributes>
 </node>
-<node nodetype='transition' id ='24' xposition='741' yposition='628' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='transition' id ='24' xposition='751' yposition='628' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='708' yposition='641'>capaNaltBEpuise</attribute>
+<attribute name='name' xposition='718' yposition='641'>capaNaltBEpuise</attribute>
 </attributes>
 </node>
-<node nodetype='transition' id ='25' xposition='741' yposition='523' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='transition' id ='25' xposition='751' yposition='523' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='705' yposition='540'>timeOutB1</attribute>
+<attribute name='name' xposition='706' yposition='533'>timeOutB1</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='26' xposition='857' yposition='348' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='26' xposition='867' yposition='348' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='871' yposition='369'>NaltB</attribute>
+<attribute name='name' xposition='881' yposition='369'>NaltB</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='27' xposition='906' yposition='625' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='27' xposition='916' yposition='625' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='890' yposition='641'>AuRevoirB</attribute>
+<attribute name='name' xposition='900' yposition='641'>AuRevoirB</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='28' xposition='681' yposition='320' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -138,18 +138,19 @@ Var t in TIMEOUT;</attribute>
 <attribute name='name' xposition='664' yposition='335'>timeOutB2</attribute>
 </attributes>
 </node>
-<node nodetype='transition' id ='29' xposition='968' yposition='352' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='transition' id ='29' xposition='982' yposition='352' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='932' yposition='367'>verifieB</attribute>
+<attribute name='name' xposition='946' yposition='367'>verifieB</attribute>
 </attributes>
 </node>
-<node nodetype='transition' id ='30' xposition='968' yposition='629' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='transition' id ='30' xposition='982' yposition='629' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='965' yposition='640'>sortB</attribute>
+<attribute name='name' xposition='979' yposition='640'>sortB</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='31' xposition='656' yposition='183' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='662' yposition='196'>ecouleB</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='32' xposition='426' yposition='628' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -159,58 +160,67 @@ Var t in TIMEOUT;</attribute>
 </node>
 <node nodetype='transition' id ='33' xposition='626' yposition='113' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='618' yposition='97'>epuiseTimeOutB</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='34' xposition='722' yposition='264' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='766' yposition='261'>rempliTimeOutB</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='35' xposition='727' yposition='109' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='35' xposition='737' yposition='109' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='737' yposition='90'>TempsPasseB</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='36' xposition='426' yposition='523' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='461' yposition='533'>timeOutA1</attribute>
+<attribute name='name' xposition='438' yposition='533'>timeOutA1</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='37' xposition='811' yposition='189' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='37' xposition='821' yposition='189' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='787' yposition='207'>NouveauTimeOutB</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='38' xposition='444' yposition='372' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='427' yposition='381'>timeOutA2</attribute>
+<attribute name='name' xposition='438' yposition='381'>timeOutA2</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='39' xposition='408' yposition='109' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='361' yposition='90'>TempsPasseA</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='40' xposition='567' yposition='260' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='506' yposition='274'>TimeOut</attribute>
+<attribute name='name' xposition='512' yposition='274'>TimeOut</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='41' xposition='489' yposition='183' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='461' yposition='196'>ecouleA</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='42' xposition='506' yposition='113' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='446' yposition='90'>epuiseTimeOutA</attribute>
 </attributes>
 </node>
-<node nodetype='transition' id ='43' xposition='403' yposition='264' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='transition' id ='43' xposition='426' yposition='264' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='329' yposition='261'>rempliTimeOutA</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='44' xposition='347' yposition='189' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='315' yposition='207'>NouveauTimeOutA</attribute>
 </attributes>
 </node>
-<node nodetype='transition' id ='45' xposition='890' yposition='113' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='transition' id ='45' xposition='900' yposition='113' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='859' yposition='90'>beforeTimeOutB</attribute>
+<attribute name='name' xposition='869' yposition='90'>beforeTimeOutB</attribute>
 </attributes>
 </node>
 </nodes>
@@ -450,13 +460,13 @@ Var t in TIMEOUT;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='92' startid='29' endid='12' color='#000000' curved='true'>
-<pi xposition='1031' yposition='460'/>
+<pi xposition='1045' yposition='460'/>
 <attributes>
 <attribute name='valuation' xposition='787' yposition='453'>1</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='93' startid='29' endid='14' color='#000000' curved='true'>
-<pi xposition='1018' yposition='526'/>
+<pi xposition='1032' yposition='526'/>
 <attributes>
 <attribute name='valuation' xposition='789' yposition='469'>1</attribute>
 </attributes>
@@ -468,7 +478,7 @@ Var t in TIMEOUT;</attribute>
 </arc>
 <arc arctype='arc' id='95' startid='27' endid='24' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='853' yposition='641'>Nalt</attribute>
+<attribute name='valuation' xposition='863' yposition='641'>Nalt</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='96' startid='27' endid='25' color='#000000' curved='true'>
@@ -570,6 +580,20 @@ Var t in TIMEOUT;</attribute>
 <arc arctype='inhibitor' id='115' startid='26' endid='45' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='907' yposition='313'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='inhibitor' id='116' startid='44' endid='28' color='#000000' curved='true'>
+<pi xposition='359' yposition='62'/>
+<pi xposition='517' yposition='63'/>
+<attributes>
+<attribute name='valuation' xposition='514' yposition='254'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='inhibitor' id='117' startid='37' endid='38' color='#000000' curved='true'>
+<pi xposition='819' yposition='59'/>
+<pi xposition='633' yposition='59'/>
+<attributes>
+<attribute name='valuation' xposition='627' yposition='280'>1</attribute>
 </attributes>
 </arc>
 </arcs>

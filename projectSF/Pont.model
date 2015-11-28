@@ -8,7 +8,7 @@ Var p in PONT;</attribute>
 <attribute name='version' xposition='0' yposition='0'>0,0</attribute>
 </attributes>
 <nodes>
-<node nodetype='place' id ='3' xposition='268' yposition='481' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='3' xposition='268' yposition='481' scale='100' interface='true' link='/projectSF/VAA.model@15' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
 <attribute name='name' xposition='237' yposition='501'>VehiculeSortirA</attribute>
 </attributes>
@@ -25,12 +25,12 @@ Var p in PONT;</attribute>
 <attribute name='name' xposition='322' yposition='272'>pause</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='6' xposition='158' yposition='292' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='6' xposition='158' yposition='292' scale='100' interface='true' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
 <attribute name='name' xposition='178' yposition='287'>OKControlleurA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='7' xposition='158' yposition='349' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='7' xposition='158' yposition='349' scale='100' interface='true' link='/projectSF/VAA.model@9' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
 <attribute name='name' xposition='123' yposition='373'>VehiculeEntrerA</attribute>
 </attributes>
@@ -50,7 +50,7 @@ Var p in PONT;</attribute>
 <attribute name='name' xposition='377' yposition='501'>okSortir</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='11' xposition='386' yposition='115' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='11' xposition='386' yposition='115' scale='100' interface='true' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
 <attribute name='name' xposition='406' yposition='110'>CapaciteControlleur</attribute>
 </attributes>
@@ -60,100 +60,100 @@ Var p in PONT;</attribute>
 <attribute name='name' xposition='291' yposition='410'>attenteVehicule</attribute>
 </attributes>
 </node>
-<node nodetype='transition' id ='23' xposition='460' yposition='343' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='transition' id ='13' xposition='460' yposition='343' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
 <attribute name='name' xposition='459' yposition='367'>okEntrerB</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='24' xposition='577' yposition='292' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='14' xposition='577' yposition='292' scale='100' interface='true' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
 <attribute name='name' xposition='558' yposition='317'>OKControlleurB</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='25' xposition='577' yposition='349' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='15' xposition='577' yposition='349' scale='100' interface='true' link='/projectSF/VAB.model@9' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
 <attribute name='name' xposition='546' yposition='367'>VehiculeEntrerB</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='30' xposition='532' yposition='481' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='16' xposition='532' yposition='481' scale='100' interface='true' link='/projectSF/VAB.model@15' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
 <attribute name='name' xposition='512' yposition='501'>VehiculeSortirB</attribute>
 </attributes>
 </node>
 </nodes>
 <arcs>
-<arc arctype='arc' id='13' startid='8' endid='11' color='#000000' curved='true'>
+<arc arctype='arc' id='17' startid='8' endid='11' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='247' yposition='335'>1</attribute>
+<attribute name='valuation' xposition='382' yposition='166'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='14' startid='5' endid='9' color='#000000' curved='true'>
+<arc arctype='arc' id='18' startid='5' endid='9' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='327' yposition='305'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='15' startid='9' endid='7' color='#000000' curved='true'>
+<arc arctype='arc' id='19' startid='9' endid='7' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='127' yposition='482'>1</attribute>
+<attribute name='valuation' xposition='237' yposition='340'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='16' startid='6' endid='9' color='#000000' curved='true'>
+<arc arctype='arc' id='20' startid='6' endid='9' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='250' yposition='482'>1</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='17' startid='9' endid='12' color='#000000' curved='true'>
+<arc arctype='arc' id='21' startid='9' endid='12' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='327' yposition='373'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='18' startid='12' endid='10' color='#000000' curved='true'>
+<arc arctype='arc' id='22' startid='12' endid='10' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='382' yposition='442'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='19' startid='3' endid='10' color='#000000' curved='true'>
+<arc arctype='arc' id='23' startid='3' endid='10' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='127' yposition='594'>1</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='20' startid='10' endid='4' color='#000000' curved='true'>
+<arc arctype='arc' id='24' startid='10' endid='4' color='#000000' curved='true'>
 <pi xposition='714' yposition='417'/>
 <attributes>
 <attribute name='valuation' xposition='703' yposition='287'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='21' startid='4' endid='8' color='#000000' curved='true'>
+<arc arctype='arc' id='25' startid='4' endid='8' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='383' yposition='175'>&lt;p&gt;</attribute>
+<attribute name='valuation' xposition='542' yposition='206'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='22' startid='8' endid='5' color='#000000' curved='true'>
+<arc arctype='arc' id='26' startid='8' endid='5' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='382' yposition='234'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='26' startid='5' endid='23' color='#000000' curved='true'>
+<arc arctype='arc' id='27' startid='5' endid='13' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='424' yposition='307'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='27' startid='23' endid='12' color='#000000' curved='true'>
+<arc arctype='arc' id='28' startid='13' endid='12' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='425' yposition='376'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='28' startid='24' endid='23' color='#000000' curved='true'>
+<arc arctype='arc' id='29' startid='14' endid='13' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='518' yposition='328'>1</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='29' startid='23' endid='25' color='#000000' curved='true'>
+<arc arctype='arc' id='30' startid='13' endid='15' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='520' yposition='366'>1</attribute>
+<attribute name='valuation' xposition='520' yposition='366'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='31' startid='30' endid='10' color='#000000' curved='true'>
+<arc arctype='arc' id='31' startid='16' endid='10' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='487' yposition='494'>1</attribute>
 </attributes>

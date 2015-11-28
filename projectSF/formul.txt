@@ -1,0 +1,7 @@
+query node (card(VehiculeA) != 21)
+query node (card(VehiculeA:(field[0] == 1)) != 1)
+
+query node (card(Idle) == 1)
+query node (card(CS) == 1)
+
+query node (card(ready) != 21)

@@ -1,17 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <model xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='http://coloane.lip6.fr/resources/schemas/model.xsd' formalism='Colored Petri Net' xposition='0' yposition='0'>
 <attributes>
-<attribute name='note' xposition='0' yposition='0'>Designed with Coloane</attribute>
-<attribute name='title' xposition='18' yposition='13'>VAA</attribute>
-<attribute name='declaration' xposition='18' yposition='40'>Class VAA is 1..Nvab;
-Var a in VAA;</attribute>
+<attribute name='note' xposition='0' yposition='0'>Designed with DCS</attribute>
+<attribute name='title' xposition='18' yposition='13'>VehiculeAutomatiseA</attribute>
+<attribute name='declaration' xposition='18' yposition='40'>CLASS 
+  Vaa is circular 1..5;
+VAR 	
+  a in Vaa;</attribute>
 <attribute name='version' xposition='0' yposition='0'>0,0</attribute>
 </attributes>
 <nodes>
 <node nodetype='place' id ='3' xposition='353' yposition='121' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='marking' xposition='277' yposition='143'>&lt;VAA.all&gt;</attribute>
-<attribute name='domain' xposition='292' yposition='122'>VAA</attribute>
+<attribute name='marking' xposition='277' yposition='143'>&lt;Vaa.all&gt;</attribute>
+<attribute name='domain' xposition='292' yposition='122'>Vaa</attribute>
 <attribute name='name' xposition='292' yposition='100'>VehiculeA</attribute>
 </attributes>
 </node>
@@ -25,8 +27,9 @@ Var a in VAA;</attribute>
 <attribute name='name' xposition='229' yposition='192'>demanderEntrerA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='6' xposition='501' yposition='191' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='6' xposition='501' yposition='191' scale='100' interface='true' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='521' yposition='201'>Vaa</attribute>
 <attribute name='name' xposition='521' yposition='186'>CommunicationControlleurA</attribute>
 </attributes>
 </node>
@@ -35,13 +38,15 @@ Var a in VAA;</attribute>
 <attribute name='name' xposition='271' yposition='337'>AttentePontA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='8' xposition='501' yposition='291' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='8' xposition='501' yposition='291' scale='100' interface='true' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='521' yposition='301'>Vaa</attribute>
 <attribute name='name' xposition='521' yposition='286'>AutorisationControlleurA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='9' xposition='502' yposition='379' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='9' xposition='502' yposition='379' scale='100' interface='true' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='522' yposition='389'>Vaa</attribute>
 <attribute name='name' xposition='522' yposition='374'>AutorisationPontA</attribute>
 </attributes>
 </node>
@@ -52,7 +57,7 @@ Var a in VAA;</attribute>
 </node>
 <node nodetype='transition' id ='11' xposition='348' yposition='295' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='286' yposition='292'>peutEntrerA</attribute>
+<attribute name='name' xposition='271' yposition='292'>peutEntrerA</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='12' xposition='348' yposition='383' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -65,13 +70,15 @@ Var a in VAA;</attribute>
 <attribute name='name' xposition='303' yposition='530'>sortPontA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='14' xposition='501' yposition='501' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='14' xposition='501' yposition='501' scale='100' interface='true' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='521' yposition='511'>Vaa</attribute>
 <attribute name='name' xposition='521' yposition='496'>AuRevoirControlleurA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='15' xposition='502' yposition='542' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='15' xposition='502' yposition='542' scale='100' interface='true' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='522' yposition='552'>Vaa</attribute>
 <attribute name='name' xposition='522' yposition='537'>AuRevoirPontA</attribute>
 </attributes>
 </node>
@@ -94,7 +101,7 @@ Var a in VAA;</attribute>
 </arc>
 <arc arctype='arc' id='19' startid='13' endid='14' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='218' yposition='619'>1</attribute>
+<attribute name='valuation' xposition='431' yposition='502'>&lt;a&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='20' startid='13' endid='3' color='#000000' curved='true'>
@@ -105,12 +112,12 @@ Var a in VAA;</attribute>
 </arc>
 <arc arctype='arc' id='21' startid='8' endid='11' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='207' yposition='429'>1</attribute>
+<attribute name='valuation' xposition='399' yposition='292'>&lt;a&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='22' startid='9' endid='12' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='208' yposition='517'>1</attribute>
+<attribute name='valuation' xposition='443' yposition='380'>&lt;a&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='23' startid='3' endid='5' color='#000000' curved='true'>
@@ -120,7 +127,7 @@ Var a in VAA;</attribute>
 </arc>
 <arc arctype='arc' id='24' startid='5' endid='6' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='193' yposition='364'>1</attribute>
+<attribute name='valuation' xposition='431' yposition='192'>&lt;a&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='25' startid='5' endid='4' color='#000000' curved='true'>
@@ -140,7 +147,7 @@ Var a in VAA;</attribute>
 </arc>
 <arc arctype='arc' id='28' startid='13' endid='15' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='430' yposition='502'>1</attribute>
+<attribute name='valuation' xposition='431' yposition='523'>&lt;a&gt;</attribute>
 </attributes>
 </arc>
 </arcs>
