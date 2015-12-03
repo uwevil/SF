@@ -142,12 +142,6 @@ Var
 <attribute name='valuation' xposition='457' yposition='544'>&lt;b&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='27' startid='13' endid='3' color='#000000' curved='true'>
-<pi xposition='467' yposition='333'/>
-<attributes>
-<attribute name='valuation' xposition='411' yposition='239'>&lt;b&gt;</attribute>
-</attributes>
-</arc>
 <arc arctype='arc' id='28' startid='13' endid='15' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='440' yposition='566'>&lt;b&gt;</attribute>

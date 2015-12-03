@@ -107,12 +107,6 @@ VAR
 <attribute name='valuation' xposition='431' yposition='502'>&lt;a&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='20' startid='13' endid='3' color='#000000' curved='true'>
-<pi xposition='462' yposition='306'/>
-<attributes>
-<attribute name='valuation' xposition='421' yposition='240'>&lt;a&gt;</attribute>
-</attributes>
-</arc>
 <arc arctype='arc' id='21' startid='8' endid='11' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='399' yposition='292'>&lt;a&gt;</attribute>
