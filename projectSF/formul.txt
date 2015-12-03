@@ -7,7 +7,8 @@ query node (card(CapacitePont) > 7)
 query node (card(CapacitePont) == 1)
 
 query node (card(Budget) == 1)
-
+query node (card(Sens) > 1)
+[a>0 and d=1 and n>0 and p>0]
 
 query node (card(VehiculeA:(field[0] == 1)) != 1)
 
