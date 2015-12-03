@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<model xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='http://coloane.lip6.fr/resources/schemas/model.xsd' formalism='Colored Petri Net' xposition='0' yposition='0'>
+<attributes>
+<attribute name='note' xposition='0' yposition='0'>Designed with Coloane</attribute>
+<attribute name='title' xposition='71' yposition='147'>Test</attribute>
+<attribute name='declaration' xposition='60' yposition='179'>Class
+	A is 1..5;
+	B is 1..10;
+Var
+	a in A;
+	b in B;</attribute>
+<attribute name='version' xposition='0' yposition='0'>0,0</attribute>
+</attributes>
+<nodes>
+<node nodetype='place' id ='3' xposition='329' yposition='179' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='domain' xposition='295' yposition='202'>A</attribute>
+<attribute name='name' xposition='291' yposition='180'>A2</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='4' xposition='329' yposition='279' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='domain' xposition='299' yposition='300'>B</attribute>
+<attribute name='name' xposition='295' yposition='280'>B2</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='5' xposition='548' yposition='179' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='marking' xposition='568' yposition='204'>&lt;A.all&gt;</attribute>
+<attribute name='domain' xposition='568' yposition='189'>A</attribute>
+<attribute name='name' xposition='568' yposition='174'>A1</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='6' xposition='548' yposition='279' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='marking' xposition='568' yposition='304'>&lt;B.all&gt;</attribute>
+<attribute name='domain' xposition='568' yposition='289'>B</attribute>
+<attribute name='name' xposition='568' yposition='274'>B1</attribute>
+</attributes>
+</node>
+<node nodetype='transition' id ='7' xposition='418' yposition='141' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='417' yposition='119'>t2A</attribute>
+</attributes>
+</node>
+<node nodetype='transition' id ='8' xposition='418' yposition='246' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='420' yposition='262'>t1B</attribute>
+</attributes>
+</node>
+<node nodetype='transition' id ='9' xposition='418' yposition='205' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='420' yposition='180'>t1A</attribute>
+</attributes>
+</node>
+<node nodetype='transition' id ='10' xposition='418' yposition='322' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='430' yposition='343'>t2B</attribute>
+</attributes>
+</node>
+</nodes>
+<arcs>
+<arc arctype='arc' id='16' startid='8' endid='4' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='373' yposition='262'>&lt;b&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='17' startid='4' endid='10' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='373' yposition='300'>&lt;b&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='18' startid='10' endid='6' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='483' yposition='300'>&lt;b&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='inhibitor' id='20' startid='6' endid='9' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='483' yposition='242'>&lt;b&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='11' startid='3' endid='7' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='366' yposition='159'>&lt;a&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='12' startid='7' endid='5' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='495' yposition='159'>&lt;a&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='13' startid='5' endid='9' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='473' yposition='189'>&lt;a&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='14' startid='9' endid='3' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='358' yposition='189'>&lt;a&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='15' startid='6' endid='8' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='483' yposition='262'>&lt;b&gt;</attribute>
+</attributes>
+</arc>
+</arcs>
+<stickys>
+</stickys>
+</model>

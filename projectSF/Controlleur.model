@@ -14,7 +14,7 @@ Var
 <nodes>
 <node nodetype='transition' id ='3' xposition='269' yposition='113' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='238' yposition='90'>beforeTimeOutA</attribute>
+<attribute name='name' xposition='238' yposition='90'>avantTimeOutA</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='4' xposition='109' yposition='229' scale='100' interface='true' link='/projectSF/VAA.model@6' alt='0' foreground='#000000' background='#ffffff'>
@@ -233,7 +233,7 @@ Var
 </node>
 <node nodetype='transition' id ='45' xposition='900' yposition='113' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='869' yposition='90'>beforeTimeOutB</attribute>
+<attribute name='name' xposition='869' yposition='90'>avantTimeOutB</attribute>
 </attributes>
 </node>
 </nodes>
