@@ -1,4 +1,13 @@
 query node (card(VehiculeA) != 21)
+query node (card(VehiculeA) == 1)
+
+query node (card(VehiculeB) == 1)
+
+query node (card(CapacitePont) == 1)
+
+query node (card(Budget) == 1)
+
+
 query node (card(VehiculeA:(field[0] == 1)) != 1)
 
 query node (card(Idle) == 1)

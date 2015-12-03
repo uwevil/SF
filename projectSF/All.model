@@ -2,21 +2,34 @@
 <model xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='http://coloane.lip6.fr/resources/schemas/model.xsd' formalism='Colored Petri Net' xposition='0' yposition='0'>
 <attributes>
 <attribute name='note' xposition='0' yposition='0'>Designed with Coloane</attribute>
-<attribute name='title' xposition='46' yposition='19'>Philosophers</attribute>
-<attribute name='declaration' xposition='40' yposition='38'>Class C is 1..5;
-Var X in C;</attribute>
+<attribute name='title' xposition='46' yposition='19'>All</attribute>
+<attribute name='declaration' xposition='40' yposition='38'>Class 
+	Vaa is 1..5;
+	Vab is 1..10;
+	Pont is 1..6;
+	TimeOut is 1..3;
+	Nalt is 1..4;
+Domain
+
+Var 
+	a in Vaa;
+	b in Vab;
+	p in Pont;
+	t in TimeOut;
+	n int Nalt;</attribute>
 <attribute name='version' xposition='29' yposition='0'>0,0</attribute>
 </attributes>
 <nodes>
 <node nodetype='place' id ='3' xposition='502' yposition='640' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='marking' xposition='540' yposition='659'>&lt;VAA.all&gt;</attribute>
-<attribute name='domain' xposition='542' yposition='638'>VAA</attribute>
+<attribute name='marking' xposition='540' yposition='659'>&lt;Vaa.all&gt;</attribute>
+<attribute name='domain' xposition='542' yposition='638'>Vaa</attribute>
 <attribute name='name' xposition='540' yposition='616'>VehiculeA</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='4' xposition='503' yposition='754' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='538' yposition='768'>Vaa</attribute>
 <attribute name='name' xposition='524' yposition='755'>AttenteAutorisationA</attribute>
 </attributes>
 </node>
@@ -39,9 +52,9 @@ Var X in C;</attribute>
 <attribute name='name' xposition='400' yposition='211'>VerificationA</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='9' xposition='502' yposition='850' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='9' xposition='503' yposition='850' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='531' yposition='851'>AttentePontA</attribute>
+<attribute name='name' xposition='532' yposition='851'>AttentePontA</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='10' xposition='1282' yposition='155' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -49,9 +62,9 @@ Var X in C;</attribute>
 <attribute name='name' xposition='1215' yposition='177'>CommunicationControlleurB</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='11' xposition='823' yposition='602' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='11' xposition='826' yposition='602' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='780' yposition='578'>CapaciteControlleur</attribute>
+<attribute name='name' xposition='783' yposition='578'>CapaciteControlleur</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='12' xposition='1182' yposition='211' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -59,9 +72,9 @@ Var X in C;</attribute>
 <attribute name='name' xposition='1202' yposition='206'>VerificationB</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='13' xposition='502' yposition='955' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='13' xposition='503' yposition='955' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='524' yposition='956'>DansPontA</attribute>
+<attribute name='name' xposition='525' yposition='956'>DansPontA</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='14' xposition='380' yposition='376' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -84,9 +97,9 @@ Var X in C;</attribute>
 <attribute name='name' xposition='422' yposition='482'>AttenteA</attribute>
 </attributes>
 </node>
-<node nodetype='transition' id ='18' xposition='497' yposition='1019' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='transition' id ='18' xposition='498' yposition='1019' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='521' yposition='1040'>sortPontA</attribute>
+<attribute name='name' xposition='522' yposition='1040'>sortPontA</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='19' xposition='1282' yposition='376' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -168,8 +181,8 @@ Var X in C;</attribute>
 </node>
 <node nodetype='place' id ='35' xposition='919' yposition='739' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='marking' xposition='885' yposition='720'>&lt;PONT.all&gt;</attribute>
-<attribute name='domain' xposition='884' yposition='699'>PONT</attribute>
+<attribute name='marking' xposition='885' yposition='720'>&lt;Pont.all&gt;</attribute>
+<attribute name='domain' xposition='884' yposition='699'>Pont</attribute>
 <attribute name='name' xposition='879' yposition='681'>CapacitePont</attribute>
 </attributes>
 </node>
@@ -212,7 +225,7 @@ Var X in C;</attribute>
 </node>
 <node nodetype='transition' id ='44' xposition='725' yposition='906' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='770' yposition='886'>okEntrerA</attribute>
+<attribute name='name' xposition='770' yposition='903'>okEntrerA</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='45' xposition='684' yposition='553' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -259,7 +272,9 @@ Var X in C;</attribute>
 </node>
 <node nodetype='place' id ='55' xposition='825' yposition='185' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='815' yposition='224'>TimeOut</attribute>
+<attribute name='marking' xposition='769' yposition='239'>&lt;TimeOut.all&gt;</attribute>
+<attribute name='domain' xposition='784' yposition='223'>TimeOut</attribute>
+<attribute name='name' xposition='788' yposition='206'>Budget</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='56' xposition='747' yposition='108' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -326,7 +341,7 @@ Var X in C;</attribute>
 </node>
 <node nodetype='transition' id ='69' xposition='903' yposition='906' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='840' yposition='886'>okEntrerB</attribute>
+<attribute name='name' xposition='840' yposition='903'>okEntrerB</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='70' xposition='1054' yposition='902' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -694,17 +709,17 @@ Var X in C;</attribute>
 </arc>
 <arc arctype='arc' id='140' startid='3' endid='6' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='2' yposition='151'>1</attribute>
+<attribute name='valuation' xposition='498' yposition='681'>&lt;a&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='141' startid='6' endid='4' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='2' yposition='210'>1</attribute>
+<attribute name='valuation' xposition='499' yposition='732'>&lt;a&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='142' startid='4' endid='15' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='2' yposition='260'>1</attribute>
+<attribute name='valuation' xposition='499' yposition='777'>&lt;a&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='143' startid='15' endid='9' color='#000000' curved='true'>
@@ -731,7 +746,7 @@ Var X in C;</attribute>
 <pi xposition='283' yposition='1020'/>
 <pi xposition='287' yposition='649'/>
 <attributes>
-<attribute name='valuation' xposition='2' yposition='306'>1</attribute>
+<attribute name='valuation' xposition='468' yposition='641'>&lt;a&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='148' startid='6' endid='7' color='#000000' curved='true'>
@@ -757,17 +772,17 @@ Var X in C;</attribute>
 </arc>
 <arc arctype='arc' id='151' startid='35' endid='42' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='303' yposition='708'>1</attribute>
+<attribute name='valuation' xposition='871' yposition='740'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='152' startid='42' endid='37' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='303' yposition='774'>1</attribute>
+<attribute name='valuation' xposition='821' yposition='777'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='153' startid='37' endid='44' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='304' yposition='841'>1</attribute>
+<attribute name='valuation' xposition='741' yposition='886'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='154' startid='44' endid='49' color='#000000' curved='true'>
@@ -783,17 +798,15 @@ Var X in C;</attribute>
 <arc arctype='arc' id='156' startid='46' endid='35' color='#000000' curved='true'>
 <pi xposition='999' yposition='892'/>
 <attributes>
-<attribute name='valuation' xposition='304' yposition='846'>1</attribute>
+<attribute name='valuation' xposition='927' yposition='764'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='157' startid='44' endid='40' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='245' yposition='875'>1</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='158' startid='40' endid='16' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='96' yposition='644'>1</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='159' startid='33' endid='46' color='#000000' curved='true'>
@@ -808,7 +821,7 @@ Var X in C;</attribute>
 </arc>
 <arc arctype='arc' id='161' startid='42' endid='11' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='340' yposition='507'>1</attribute>
+<attribute name='valuation' xposition='821' yposition='638'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='162' startid='30' endid='44' color='#000000' curved='true'>
@@ -889,7 +902,7 @@ Var X in C;</attribute>
 </arc>
 <arc arctype='arc' id='175' startid='37' endid='69' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='718' yposition='857'>1</attribute>
+<attribute name='valuation' xposition='894' yposition='886'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='176' startid='21' endid='69' color='#000000' curved='true'>
@@ -902,12 +915,10 @@ Var X in C;</attribute>
 </arc>
 <arc arctype='arc' id='177' startid='69' endid='70' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='829' yposition='908'>1</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='178' startid='70' endid='67' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='1027' yposition='920'>1</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='179' startid='69' endid='49' color='#000000' curved='true'>

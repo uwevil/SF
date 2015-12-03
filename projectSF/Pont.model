@@ -3,26 +3,29 @@
 <attributes>
 <attribute name='note' xposition='0' yposition='0'>Designed with DCS</attribute>
 <attribute name='title' xposition='21' yposition='13'>Pont</attribute>
-<attribute name='declaration' xposition='21' yposition='40'>Class PONT is 1..CapaP;
-Var p in PONT;</attribute>
+<attribute name='declaration' xposition='21' yposition='40'>Class
+	Pont is 1..6;
+Var 
+	p in Pont;</attribute>
 <attribute name='version' xposition='0' yposition='0'>0,0</attribute>
 </attributes>
 <nodes>
 <node nodetype='place' id ='3' xposition='268' yposition='481' scale='100' interface='true' link='/projectSF/VAA.model@15' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='237' yposition='501'>VehiculeSortirA</attribute>
+<attribute name='name' xposition='237' yposition='501'>VehiculeSortir</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='4' xposition='703' yposition='205' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='marking' xposition='619' yposition='181'>&lt;PONT.all&gt;</attribute>
-<attribute name='domain' xposition='619' yposition='166'>PONT</attribute>
+<attribute name='marking' xposition='619' yposition='181'>&lt;Pont.all&gt;</attribute>
+<attribute name='domain' xposition='619' yposition='166'>Pont</attribute>
 <attribute name='name' xposition='619' yposition='151'>CapacitePont</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='5' xposition='386' yposition='271' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='322' yposition='272'>pause</attribute>
+<attribute name='domain' xposition='326' yposition='280'>Pont</attribute>
+<attribute name='name' xposition='335' yposition='259'>pause</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='6' xposition='158' yposition='292' scale='100' interface='true' alt='0' foreground='#000000' background='#ffffff'>
@@ -32,6 +35,7 @@ Var p in PONT;</attribute>
 </node>
 <node nodetype='place' id ='7' xposition='158' yposition='349' scale='100' interface='true' link='/projectSF/VAA.model@9' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='153' yposition='388'>Pont</attribute>
 <attribute name='name' xposition='123' yposition='373'>VehiculeEntrerA</attribute>
 </attributes>
 </node>
@@ -52,11 +56,13 @@ Var p in PONT;</attribute>
 </node>
 <node nodetype='place' id ='11' xposition='386' yposition='115' scale='100' interface='true' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='406' yposition='125'>Pont</attribute>
 <attribute name='name' xposition='406' yposition='110'>CapaciteControlleur</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='12' xposition='387' yposition='409' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='407' yposition='419'>Pont</attribute>
 <attribute name='name' xposition='291' yposition='410'>attenteVehicule</attribute>
 </attributes>
 </node>
@@ -72,12 +78,8 @@ Var p in PONT;</attribute>
 </node>
 <node nodetype='place' id ='15' xposition='577' yposition='349' scale='100' interface='true' link='/projectSF/VAB.model@9' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='572' yposition='388'>Pont</attribute>
 <attribute name='name' xposition='546' yposition='367'>VehiculeEntrerB</attribute>
-</attributes>
-</node>
-<node nodetype='place' id ='16' xposition='532' yposition='481' scale='100' interface='true' link='/projectSF/VAB.model@15' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-<attribute name='name' xposition='512' yposition='501'>VehiculeSortirB</attribute>
 </attributes>
 </node>
 </nodes>
@@ -150,12 +152,7 @@ Var p in PONT;</attribute>
 </arc>
 <arc arctype='arc' id='30' startid='13' endid='15' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='520' yposition='366'>&lt;p&gt;</attribute>
-</attributes>
-</arc>
-<arc arctype='arc' id='31' startid='16' endid='10' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='487' yposition='494'>1</attribute>
+<attribute name='valuation' xposition='523' yposition='350'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
 </arcs>

@@ -19,6 +19,7 @@ VAR
 </node>
 <node nodetype='place' id ='4' xposition='353' yposition='239' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='280' yposition='253'>Vaa</attribute>
 <attribute name='name' xposition='235' yposition='240'>AttenteAutorisationA</attribute>
 </attributes>
 </node>
@@ -35,6 +36,7 @@ VAR
 </node>
 <node nodetype='place' id ='7' xposition='353' yposition='336' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='296' yposition='359'>Vaa</attribute>
 <attribute name='name' xposition='271' yposition='337'>AttentePontA</attribute>
 </attributes>
 </node>
@@ -52,6 +54,7 @@ VAR
 </node>
 <node nodetype='place' id ='10' xposition='353' yposition='430' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='296' yposition='456'>Vaa</attribute>
 <attribute name='name' xposition='277' yposition='431'>DansPontA</attribute>
 </attributes>
 </node>

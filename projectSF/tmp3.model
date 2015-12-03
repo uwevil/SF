@@ -5,7 +5,8 @@
 <attribute name='title' xposition='20' yposition='157'>Philosophers</attribute>
 <attribute name='declaration' xposition='20' yposition='184'>Class
  C is 1..5;
-
+Domain
+ D is &lt;C&gt;;
 Var
  X in C;</attribute>
 <attribute name='version' xposition='0' yposition='0'>0,0</attribute>

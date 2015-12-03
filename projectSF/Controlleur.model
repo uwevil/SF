@@ -3,8 +3,12 @@
 <attributes>
 <attribute name='note' xposition='0' yposition='0'>Designed with DCS</attribute>
 <attribute name='title' xposition='42' yposition='19'>Controlleur</attribute>
-<attribute name='declaration' xposition='40' yposition='38'>Class TIMEOUT is 1..TimeOut;
-Var t in TIMEOUT;</attribute>
+<attribute name='declaration' xposition='40' yposition='38'>Class 
+	TimeOut is 1..3;
+	Nalt is 1..4;
+Var 
+	t in TimeOut;
+	n in Nalt;</attribute>
 <attribute name='version' xposition='29' yposition='0'>0,0</attribute>
 </attributes>
 <nodes>
@@ -80,6 +84,8 @@ Var t in TIMEOUT;</attribute>
 </node>
 <node nodetype='place' id ='17' xposition='315' yposition='347' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='marking' xposition='335' yposition='372'>&lt;Nalt.all&gt;</attribute>
+<attribute name='domain' xposition='335' yposition='357'>Nalt</attribute>
 <attribute name='name' xposition='293' yposition='367'>NaltA</attribute>
 </attributes>
 </node>
@@ -125,6 +131,7 @@ Var t in TIMEOUT;</attribute>
 </node>
 <node nodetype='place' id ='26' xposition='867' yposition='348' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='885' yposition='381'>Nalt</attribute>
 <attribute name='name' xposition='881' yposition='369'>NaltB</attribute>
 </attributes>
 </node>
@@ -170,6 +177,7 @@ Var t in TIMEOUT;</attribute>
 </node>
 <node nodetype='place' id ='35' xposition='737' yposition='109' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='757' yposition='119'>TimeOut</attribute>
 <attribute name='name' xposition='737' yposition='90'>TempsPasseB</attribute>
 </attributes>
 </node>
@@ -180,6 +188,7 @@ Var t in TIMEOUT;</attribute>
 </node>
 <node nodetype='place' id ='37' xposition='821' yposition='189' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='841' yposition='199'>TimeOut</attribute>
 <attribute name='name' xposition='787' yposition='207'>NouveauTimeOutB</attribute>
 </attributes>
 </node>
@@ -190,12 +199,15 @@ Var t in TIMEOUT;</attribute>
 </node>
 <node nodetype='place' id ='39' xposition='408' yposition='109' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='428' yposition='119'>TimeOut</attribute>
 <attribute name='name' xposition='361' yposition='90'>TempsPasseA</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='40' xposition='567' yposition='260' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='512' yposition='274'>TimeOut</attribute>
+<attribute name='marking' xposition='497' yposition='300'>&lt;TimeOut.all&gt;</attribute>
+<attribute name='domain' xposition='512' yposition='287'>TimeOut</attribute>
+<attribute name='name' xposition='512' yposition='274'>Budget</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='41' xposition='489' yposition='183' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -215,6 +227,7 @@ Var t in TIMEOUT;</attribute>
 </node>
 <node nodetype='place' id ='44' xposition='347' yposition='189' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='domain' xposition='367' yposition='199'>TimeOut</attribute>
 <attribute name='name' xposition='315' yposition='207'>NouveauTimeOutA</attribute>
 </attributes>
 </node>
@@ -237,7 +250,7 @@ Var t in TIMEOUT;</attribute>
 </arc>
 <arc arctype='arc' id='48' startid='45' endid='40' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='685' yposition='269'>1</attribute>
+<attribute name='valuation' xposition='658' yposition='219'>&lt;t&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='49' startid='19' endid='5' color='#000000' curved='true'>
@@ -309,7 +322,7 @@ Var t in TIMEOUT;</attribute>
 </arc>
 <arc arctype='arc' id='62' startid='15' endid='32' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='343' yposition='634'>Nalt
+<attribute name='valuation' xposition='343' yposition='634'>&lt;Nalt.all&gt;
 </attribute>
 </attributes>
 </arc>
@@ -350,12 +363,12 @@ Var t in TIMEOUT;</attribute>
 </arc>
 <arc arctype='arc' id='70' startid='40' endid='41' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='517' yposition='321'>1</attribute>
+<attribute name='valuation' xposition='521' yposition='207'>&lt;t&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='71' startid='41' endid='39' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='517' yposition='268'>1</attribute>
+<attribute name='valuation' xposition='468' yposition='164'>&lt;t&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='72' startid='39' endid='42' color='#000000' curved='true'>
@@ -370,17 +383,17 @@ Var t in TIMEOUT;</attribute>
 </arc>
 <arc arctype='arc' id='74' startid='42' endid='44' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='440' yposition='275'>1</attribute>
+<attribute name='valuation' xposition='480' yposition='123'>&lt;t&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='75' startid='44' endid='43' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='432' yposition='307'>1</attribute>
+<attribute name='valuation' xposition='405' yposition='239'>&lt;t&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='76' startid='43' endid='40' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='458' yposition='332'>1</attribute>
+<attribute name='valuation' xposition='457' yposition='261'>&lt;t&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='inhibitor' id='77' startid='17' endid='43' color='#000000' curved='true'>
@@ -395,7 +408,7 @@ Var t in TIMEOUT;</attribute>
 </arc>
 <arc arctype='arc' id='79' startid='39' endid='3' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='434' yposition='214'>1</attribute>
+<attribute name='valuation' xposition='312' yposition='110'>&lt;t&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='inhibitor' id='80' startid='17' endid='3' color='#000000' curved='true'>
@@ -410,7 +423,7 @@ Var t in TIMEOUT;</attribute>
 </arc>
 <arc arctype='arc' id='82' startid='3' endid='40' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='410' yposition='267'>1</attribute>
+<attribute name='valuation' xposition='323' yposition='131'>&lt;t&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='inhibitor' id='83' startid='26' endid='41' color='#000000' curved='true'>
@@ -420,7 +433,7 @@ Var t in TIMEOUT;</attribute>
 </arc>
 <arc arctype='arc' id='84' startid='32' endid='26' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='490' yposition='579'>Nalt
+<attribute name='valuation' xposition='490' yposition='579'>&lt;Nalt.all&gt;
 </attribute>
 </attributes>
 </arc>
@@ -478,7 +491,7 @@ Var t in TIMEOUT;</attribute>
 </arc>
 <arc arctype='arc' id='95' startid='27' endid='24' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='863' yposition='641'>Nalt</attribute>
+<attribute name='valuation' xposition='863' yposition='641'>&lt;Nalt.all&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='96' startid='27' endid='25' color='#000000' curved='true'>
@@ -493,7 +506,7 @@ Var t in TIMEOUT;</attribute>
 </arc>
 <arc arctype='arc' id='98' startid='24' endid='17' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='673' yposition='579'>Nalt
+<attribute name='valuation' xposition='673' yposition='579'>&lt;Nalt.all&gt;
 </attribute>
 </attributes>
 </arc>
@@ -514,12 +527,12 @@ Var t in TIMEOUT;</attribute>
 </arc>
 <arc arctype='arc' id='102' startid='40' endid='31' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='559' yposition='307'>1</attribute>
+<attribute name='valuation' xposition='628' yposition='207'>&lt;t&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='103' startid='31' endid='35' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='672' yposition='248'>1</attribute>
+<attribute name='valuation' xposition='683' yposition='152'>&lt;t&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='104' startid='35' endid='33' color='#000000' curved='true'>
@@ -529,17 +542,17 @@ Var t in TIMEOUT;</attribute>
 </arc>
 <arc arctype='arc' id='105' startid='33' endid='37' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='829' yposition='265'>1</attribute>
+<attribute name='valuation' xposition='664' yposition='123'>&lt;t&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='106' startid='37' endid='34' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='737' yposition='321'>1</attribute>
+<attribute name='valuation' xposition='753' yposition='239'>&lt;t&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='107' startid='34' endid='40' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='558' yposition='341'>1</attribute>
+<attribute name='valuation' xposition='618' yposition='261'>&lt;t&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='inhibitor' id='108' startid='40' endid='33' color='#000000' curved='true'>
@@ -586,14 +599,14 @@ Var t in TIMEOUT;</attribute>
 <pi xposition='359' yposition='62'/>
 <pi xposition='517' yposition='63'/>
 <attributes>
-<attribute name='valuation' xposition='514' yposition='254'>1</attribute>
+<attribute name='valuation' xposition='441' yposition='55'>&lt;t&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='inhibitor' id='117' startid='37' endid='38' color='#000000' curved='true'>
 <pi xposition='819' yposition='59'/>
 <pi xposition='633' yposition='59'/>
 <attributes>
-<attribute name='valuation' xposition='627' yposition='280'>1</attribute>
+<attribute name='valuation' xposition='718' yposition='55'>&lt;t&gt;</attribute>
 </attributes>
 </arc>
 </arcs>
