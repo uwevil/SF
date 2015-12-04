@@ -123,7 +123,10 @@ Var
 </node>
 <node nodetype='transition' id ='19' xposition='500' yposition='547' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='guard' xposition='310' yposition='552'>[a&gt;0 and d=1 and n&gt;0 and p&gt;0]</attribute>
+<attribute name='guard' xposition='310' yposition='552'>[a!=Vaa.0 
+and d=Direction.1 
+and n!=Nalt.0 
+and p!=Pont.0]</attribute>
 <attribute name='name' xposition='440' yposition='530'>verifieA</attribute>
 </attributes>
 </node>
@@ -147,7 +150,10 @@ Var
 </node>
 <node nodetype='transition' id ='23' xposition='1621' yposition='544' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='guard' xposition='1685' yposition='552'>[b&gt;0 and d=2 and n&gt;0 and p&gt;0]</attribute>
+<attribute name='guard' xposition='1685' yposition='552'>[b!=Vab.0 
+and d=Direction.2 
+and n!=Nalt.0 
+and p!=Pont0]</attribute>
 <attribute name='name' xposition='1668' yposition='541'>verifieB</attribute>
 </attributes>
 </node>
@@ -172,7 +178,8 @@ Var
 </node>
 <node nodetype='transition' id ='27' xposition='910' yposition='363' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='guard' xposition='821' yposition='360'>[d=1 and t=0]</attribute>
+<attribute name='guard' xposition='821' yposition='360'>[d=Direction.1 
+and t=TimeOut.0]</attribute>
 <attribute name='name' xposition='816' yposition='341'>epuiseTimeOut1</attribute>
 </attributes>
 </node>
@@ -185,25 +192,28 @@ Var
 </node>
 <node nodetype='transition' id ='29' xposition='1234' yposition='363' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='guard' xposition='1254' yposition='373'>[d=2 and t=0]</attribute>
+<attribute name='guard' xposition='1254' yposition='373'>[d=Direction.2 
+and t=TimeOut.0]</attribute>
 <attribute name='name' xposition='1266' yposition='360'>epuiseTimeOut2</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='30' xposition='1178' yposition='15' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='guard' xposition='1215' yposition='33'>[t&gt;0]</attribute>
+<attribute name='guard' xposition='1215' yposition='33'>[t!=TimeOut.0]</attribute>
 <attribute name='name' xposition='1211' yposition='12'>ecoule</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='31' xposition='733' yposition='497' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='guard' xposition='635' yposition='494'>[n=0 and d=1]</attribute>
+<attribute name='guard' xposition='635' yposition='494'>[n=Nalt.0 
+and d=Direction.1]</attribute>
 <attribute name='name' xposition='658' yposition='479'>epuiseNaltA</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='32' xposition='1399' yposition='499' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='guard' xposition='1419' yposition='509'>[n=0 and d=2]</attribute>
+<attribute name='guard' xposition='1419' yposition='509'>[n=Nalt.0 
+and d=Direction.2]</attribute>
 <attribute name='name' xposition='1419' yposition='494'>epuiseNaltB</attribute>
 </attributes>
 </node>
