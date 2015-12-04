@@ -21,3 +21,5 @@ query node (card(B1) > 1)
 
 query node ((card(DansPontA) > 0) and (card(DansPontB) > 0))
 query node ((card(VehiculeEntrerA) > 0) and (card(VehiculeEntrerB) > 0))
+
+query node (card(EpuisePont) > 10) 
