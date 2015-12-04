@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<model xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='http://coloane.lip6.fr/resources/schemas/model.xsd' formalism='Colored Petri Net' xposition='0' yposition='0'>
+<attributes>
+<attribute name='note' xposition='0' yposition='0'>Designed with Coloane</attribute>
+<attribute name='title' xposition='71' yposition='147'>Test</attribute>
+<attribute name='declaration' xposition='60' yposition='179'>Class
+	A is 1..5;
+	B is 1..10;
+Var
+	a in A;
+	b in B;</attribute>
+<attribute name='version' xposition='0' yposition='0'>0,0</attribute>
+</attributes>
+<nodes>
+<node nodetype='place' id ='6' xposition='591' yposition='463' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='domain' xposition='611' yposition='473'>B</attribute>
+<attribute name='name' xposition='611' yposition='458'>B3</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='7' xposition='548' yposition='279' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='marking' xposition='568' yposition='304'>&lt;B.5&gt;</attribute>
+<attribute name='domain' xposition='568' yposition='289'>B</attribute>
+<attribute name='name' xposition='568' yposition='274'>B1</attribute>
+</attributes>
+</node>
+<node nodetype='transition' id ='8' xposition='597' yposition='388' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='guard' xposition='617' yposition='398'>[b=B.5]</attribute>
+<attribute name='name' xposition='617' yposition='383'>t3B</attribute>
+</attributes>
+</node>
+</nodes>
+<arcs>
+<arc arctype='arc' id='18' startid='7' endid='8' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='572' yposition='333'>&lt;b&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='19' startid='8' endid='6' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='594' yposition='425'>&lt;B.9&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='25' startid='8' endid='7' color='#000000' curved='true'>
+<pi xposition='421' yposition='404'/>
+<attributes>
+<attribute name='valuation' xposition='449' yposition='345'>&lt;b--1&gt;</attribute>
+</attributes>
+</arc>
+</arcs>
+<stickys>
+</stickys>
+</model>
