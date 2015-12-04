@@ -100,7 +100,7 @@ Var
 </node>
 <node nodetype='place' id ='15' xposition='1068' yposition='799' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='marking' xposition='997' yposition='833'>&lt;Nalt.4&gt;</attribute>
+<attribute name='marking' xposition='997' yposition='833'>&lt;Nalt.3&gt;</attribute>
 <attribute name='domain' xposition='1017' yposition='817'>Nalt</attribute>
 <attribute name='name' xposition='988' yposition='801'>NaltVehicule</attribute>
 </attributes>

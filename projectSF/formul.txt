@@ -18,3 +18,6 @@ query node (card(CS) == 1)
 query node (card(ready) != 21)
 query node (card(A1) > 1)
 query node (card(B1) > 1)
+
+query node ((card(DansPontA) > 0) and (card(DansPontB) > 0))
+query node ((card(VehiculeEntrerA) > 0) and (card(VehiculeEntrerB) > 0))
