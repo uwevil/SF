@@ -7,7 +7,7 @@ query node (card(CapacitePont) > 7)
 query node (card(CapacitePont) == 1)
 
 query node (card(Budget) == 1)
-query node (card(Sens) > 1)
+query node (card(Sens) > 1) // OK no path
 [a>0 and d=1 and n>0 and p>0]
 
 query node (card(VehiculeA:(field[0] == 1)) != 1)
@@ -21,5 +21,9 @@ query node (card(B1) > 1)
 
 query node ((card(DansPontA) > 0) and (card(DansPontB) > 0))
 query node ((card(VehiculeEntrerA) > 0) and (card(VehiculeEntrerB) > 0))
+
+query node (card(DansPontA)==1) and (card(DansPontB)==1)
+query node (card(DansPontA + DansPontB) > 1)
+
 
 query node (card(EpuisePont) > 10) 

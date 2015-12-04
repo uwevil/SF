@@ -13,8 +13,7 @@
 Domain
 	DirectionVaaPont is &lt;Direction, Vaa, Pont&gt;;
 	DirectionVabPont is &lt;Direction, Vab, Pont&gt;;
-	DirectionVaa is &lt;Direction, Vaa&gt;;
-	DirectionVab is &lt;Direction, Vab&gt;;
+	DirectionPont is &lt;Direction, Pont&gt;;
 Var 
 	d in Direction;
 	a in Vaa;
@@ -64,7 +63,7 @@ Var
 </node>
 <node nodetype='place' id ='9' xposition='238' yposition='372' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='domain' xposition='233' yposition='414'>Pont</attribute>
+<attribute name='domain' xposition='233' yposition='414'>DirectionPont</attribute>
 <attribute name='name' xposition='216' yposition='396'>VehiculeEntrerA</attribute>
 </attributes>
 </node>
@@ -96,7 +95,7 @@ Var
 </node>
 <node nodetype='place' id ='15' xposition='842' yposition='372' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='domain' xposition='884' yposition='382'>Pont</attribute>
+<attribute name='domain' xposition='884' yposition='382'>DirectionPont</attribute>
 <attribute name='name' xposition='862' yposition='357'>VehiculeEntrerB</attribute>
 </attributes>
 </node>
@@ -140,7 +139,7 @@ Var
 </arc>
 <arc arctype='arc' id='23' startid='11' endid='9' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='266' yposition='373'>&lt;p&gt;</attribute>
+<attribute name='valuation' xposition='266' yposition='373'>&lt;d, p&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='24' startid='6' endid='12' color='#000000' curved='true'>
@@ -170,7 +169,7 @@ Var
 </arc>
 <arc arctype='arc' id='29' startid='14' endid='15' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='800' yposition='373'>&lt;p&gt;</attribute>
+<attribute name='valuation' xposition='800' yposition='373'>&lt;d, p&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='30' startid='14' endid='13' color='#000000' curved='true'>
