@@ -8,6 +8,14 @@ query node (card(CapacitePont) == 1)
 
 query node (card(Budget) == 1)
 query node (card(Sens) > 1) // OK no path
+query node ((card(Sens) != 1) and (card(Sens) != 0))
+
+
+query node (card(VehiculeA) == 1) // OK 4 paths 0, 2, 3, 6
+
+query node (card(FiniA) == 1)
+query node (card(FiniB) == 1)
+
 [a>0 and d=1 and n>0 and p>0]
 
 query node (card(VehiculeA:(field[0] == 1)) != 1)
