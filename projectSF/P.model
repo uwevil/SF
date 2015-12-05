@@ -2,7 +2,7 @@
 <model xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='http://coloane.lip6.fr/resources/schemas/model.xsd' formalism='Colored Petri Net' xposition='0' yposition='0'>
 <attributes>
 <attribute name='note' xposition='0' yposition='0'>Designed with Coloane</attribute>
-<attribute name='title' xposition='340' yposition='0'>Pont</attribute>
+<attribute name='title' xposition='340' yposition='0'>PModel</attribute>
 <attribute name='declaration' xposition='98' yposition='69'>Class 
 	Direction is 1..2;
 	Vaa is 0..2;

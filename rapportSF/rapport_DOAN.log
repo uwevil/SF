@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.10.7)  5 DEC 2015 15:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.10.7)  5 DEC 2015 20:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -577,31 +577,42 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gin@req@height=\dimen130
 \Gin@req@width=\dimen131
 )
-(./rapport_DOAN.aux)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/anysize/anysize.sty
+Package: anysize 1994/08/13 setting margin sizes
+
+document style option `anysize' loaded
+Michael Salzenberg, Thomas Esser, Dirk Hillbrecht
+Version 1.0, Aug 13, 1994
+\@Leftmargin=\dimen132
+\@Rightmargin=\dimen133
+\@Topmargin=\dimen134
+\@Bottommargin=\dimen135
+) (./rapport_DOAN.aux)
 \openout1 = `rapport_DOAN.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 27.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/t1lmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 32.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \degres on input line 27.
-LaTeX Info: Redefining \dots on input line 27.
-LaTeX Info: Redefining \up on input line 27.
-LaTeX Info: Redefining \microtypecontext on input line 27.
+LaTeX Info: Redefining \degres on input line 32.
+LaTeX Info: Redefining \dots on input line 32.
+LaTeX Info: Redefining \up on input line 32.
+LaTeX Info: Redefining \microtypecontext on input line 32.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -611,12 +622,13 @@ Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
+
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
 \AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 32.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -626,9 +638,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count118
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
 
 (./rapport_DOAN.out) (./rapport_DOAN.out)
 \@outlinefile=\write3
@@ -638,13 +650,13 @@ LaTeX Info: Redefining \nameref on input line 27.
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count119
-\scratchdimen=\dimen132
+\scratchdimen=\dimen136
 \scratchbox=\box29
 \nofMPsegments=\count120
 \nofMParguments=\count121
 \everyMPshowfont=\toks24
 \MPscratchCnt=\count122
-\MPscratchDim=\dimen133
+\MPscratchDim=\dimen137
 \MPnumerator=\count123
 \makeMPintoPDFobject=\count124
 \everyMPtoPDFconversion=\toks25
@@ -671,59 +683,54 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.61 \chapter
+l.66 \chapter
              {Explication} [1
 
 ]
 Chapitre 2.
-<vaaModel.png, id=34, 763.85374pt x 650.43pt>
+[2
+
+] <vaaModel.png, id=68, 763.85374pt x 650.43pt>
 File: vaaModel.png Graphic file (type png)
  <use vaaModel.png>
-Package pdftex.def Info: vaaModel.png used on input line 66.
+Package pdftex.def Info: vaaModel.png used on input line 110.
 (pdftex.def)             Requested size: 426.79134pt x 363.41455pt.
-
-Overfull \hbox (66.79134pt too wide) in paragraph at lines 66--67
- [][] 
- []
-
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 76.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 76.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 76.
 
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 76.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
+[3] [4 <./vaaModel.png>] <vabModel.png, id=81, 718.685pt x 637.38126pt>
+File: vabModel.png Graphic file (type png)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 76.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 76.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 76.
+<use vabModel.png>
+Package pdftex.def Info: vabModel.png used on input line 124.
+(pdftex.def)             Requested size: 426.79134pt x 378.52199pt.
+ [5 <./vabModel.png>]
+<pontModel.png, id=88, 694.595pt x 342.27875pt>
+File: pontModel.png Graphic file (type png)
+ <use pontModel.png>
+Package pdftex.def Info: pontModel.png used on input line 137.
+(pdftex.def)             Requested size: 426.79134pt x 210.31998pt.
+ [6 <./pontModel.png>] <ctrlpModel.png, id=96, 1218.5525pt x 961.5925pt>
+File: ctrlpModel.png Graphic file (type png)
 
+<use ctrlpModel.png>
+Package pdftex.def Info: ctrlpModel.png used on input line 152.
+(pdftex.def)             Requested size: 512.1496pt x 404.15955pt.
 
-LaTeX Warning: Command \` invalid in math mode on input line 76.
+Overfull \hbox (30.27414pt too wide) in paragraph at lines 152--153
+[][] 
+ []
 
+[7 <./ctrlpModel.png>]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 160.
 
-LaTeX Warning: Command \` invalid in math mode on input line 90.
-
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 100.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -732,92 +739,74 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [2
 
-]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[3 <./vaaModel.png>]
-Overfull \hbox (272.36069pt too wide) in paragraph at lines 192--192
+Overfull \hbox (150.48523pt too wide) in paragraph at lines 451--451
 []\T1/lmtt/m/n/10.95 PN syntax checker by X. Bonnaire 1992-1996, A. Diagne 1996
 -1997, I. Mounier 1993-2002, J.-L. Mounier 1998-2006[] 
  []
 
-
-Overfull \hbox (53.62137pt too wide) in paragraph at lines 192--192
-[]\T1/lmtt/m/n/10.95 Statistics about the reachability graph provided by prod a
-re shown below[] 
- []
-
-
-Overfull \hbox (82.65248pt too wide) in paragraph at lines 192--192
-[]\T1/lmtt/m/n/10.95 Persostent directory -> /tmp/ProdInCosyVerif_f369dd251b6b1
-eac4a8afd256ef6d33b[] 
- []
-
-[4]
-Overfull \hbox (320.3626pt too wide) in paragraph at lines 192--192
+[8]
+Overfull \hbox (198.48714pt too wide) in paragraph at lines 451--451
 []\T1/lmtt/m/n/10.95 + echo 'PN syntax checker by X. Bonnaire 1992-1996, A. Dia
 gne 1996-1997, I. Mounier 1993-2002, J.-L. Mounier 1998-2006'[] 
  []
 
 
-Overfull \hbox (311.16463pt too wide) in paragraph at lines 192--192
+Overfull \hbox (189.28917pt too wide) in paragraph at lines 451--451
 []\T1/lmtt/m/n/10.95 + /tmp/ProdInCosyVerif_f369dd251b6b1eac4a8afd256ef6d33b/Fk
 Sandrine -s -i prod_8763807886865996390.cami -o camix_model[] 
  []
 
 
-Overfull \hbox (288.1697pt too wide) in paragraph at lines 192--192
+Overfull \hbox (166.29424pt too wide) in paragraph at lines 451--451
 []\T1/lmtt/m/n/10.95 + /tmp/ProdInCosyVerif_f369dd251b6b1eac4a8afd256ef6d33b/ma
 trice -s -i camix_model -m rdp_matrix -p prod_model.net[] 
  []
 
-
-Overfull \hbox (101.91072pt too wide) in paragraph at lines 192--192
-[]\T1/lmtt/m/n/10.95 + echo 'Statistics about the reachability graph provided b
-y prod are shown below'[] 
+[9] [10] [11] [12]
+Overfull \hbox (202.22383pt too wide) in paragraph at lines 451--451
+[]\T1/lmtt/m/n/10.95 query node ((DansPontA == <.1.> and DansPontB == <.1.>) or
+ (DansPontA == <.1.> and DansPontB == <.2.>)) // OKKKK 0 path[] 
  []
 
-[5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
+[13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 453.
+ [14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 453.
  (./rapport_DOAN.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
-Package rerunfilecheck Info: File `rapport_DOAN.out' has not changed.
-(rerunfilecheck)             Checksum: 6B4D2E8714FD0BAD10137ABB28D60B83;210.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 453.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 453.
+
+
+Package rerunfilecheck Warning: File `rapport_DOAN.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `rapport_DOAN.out':
+(rerunfilecheck)             Before: B86688A9BDC321EBE731AE97D517CF50;615
+(rerunfilecheck)             After:  08881004C0B859926D195D053C8D007F;674.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 453.
  ) 
 Here is how much of TeX's memory you used:
- 8990 strings out of 493117
- 134480 string characters out of 6135433
- 260154 words of memory out of 5000000
- 12257 multiletter control sequences out of 15000+600000
- 72607 words of font info for 67 fonts, out of 8000000 for 9000
+ 8989 strings out of 493117
+ 133528 string characters out of 6135433
+ 261423 words of memory out of 5000000
+ 12224 multiletter control sequences out of 15000+600000
+ 63467 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,10n,43p,619b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
-texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2014/t
-exmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2014/texmf-dist/
-fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
-1/public/lm/lmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/l
-m/lmbxi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmcsc10
-.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2014/texmf-dist/fon
-ts/type1/public/lm/lmri12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
-ublic/lm/lmtt10.pfb>
-Output written on rapport_DOAN.pdf (7 pages, 279235 bytes).
+ 30i,10n,43p,815b,518s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
+blic/lm/lmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr
+i10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmri12.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on rapport_DOAN.pdf (15 pages, 697525 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 17958 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 172 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 14957 words of extra memory for PDF output out of 17280 (max. 10000000)
 
