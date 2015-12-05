@@ -1,33 +1,35 @@
-query node (card(VehiculeA) == 1)
+query node (card(CapacitePont) > 5) // OK 0 path
 
-query node (card(CapacitePont) > 7)
-query node (card(CapacitePont) == 1)
-
-query node (card(Budget) == 1)
+query node (card(Budget) > 1) // OK 0path
 query node (card(Sens) > 1) // OK no path
+query node (card(NaltVehicule) > 1)
 query node ((card(Sens) != 1) and (card(Sens) != 0))
 query node (card(Sens) == 2) // oK 0 path
 
-
-query node (card(VehiculeA) == 1) // OK 4 paths 0, 2, 3, 6
-
-query node (card(FiniA) == 1)
-query node (card(FiniB) == 1)
-
 query node ((card(FiniA) == 2) and (card(FiniB) == 2)) // OK
 
-query node (EF(AttenteAutorisationA==<.1.> and EG(FiniA!=<.1.>))) //fauxx 164240 paths
-
 query node ((card(VehiculeA) + card(AttenteAutorisationA) + card(DansPontA) + card(FiniA)) != 3) // OK
+
+query verbose (implies(AttenteAutorisationA==<.1.>, AF(DansPontA==<.1.>)) and implies(AttenteAutorisationA==<.2.>, AF(DansPontA==<.2.>))) // OK
+
+query verbose (AG(implies(AttenteAutorisationA==<.1.>, AF(DansPontA==<.1.>))))
+query verbose (AttenteAutorisationA==<.1.> and EG(DansPontA!=<.1.>))
+
+
+query verbose (implies(AttenteAutorisationA==<.1.>, AF(DansPontA==<.1.>)) and implies(AttenteAutorisationA==<.2.>, AF(DansPontA==<.2.>)) and implies(AttenteAutorisationB==<.1.>, AF(DansPontB==<.1.>)) and implies(AttenteAutorisationB==<.2.>, AF(DansPontB==<.2.>))) // OKKK
+
+query verbose (AG(implies(AttenteAutorisationA==<.1.>, AF(DansPontA==<.1.>))) and AG(implies(AttenteAutorisationA==<.2.>, AF(DansPontA==<.2.>))) and AG(implies(AttenteAutorisationB==<.1.>, AF(DansPontB==<.1.>))) and AG(implies(AttenteAutorisationB==<.2.>, AF(DansPontB==<.2.>))))
+
+
 
 query node (implies(AttenteAutorisationA==<.1.>, AF(DansPontA==<.1.>)) and implies(AttenteAutorisationA==<.2.>, AF(DansPontA==<.2.>)))
 
 query node ((AttenteAutorisationA == <.1.> and FiniA == <.1.>) or (AttenteAutorisationA == <.2.> and FiniA == <.2.>))
 
+query node (AG(implies(AttenteAutorisationA == <.1.>, EG(DansPontA != <.1.> and DansPontA != <.2.>)) or implies(AttenteAutorisationA == <.2.>, EG(DansPontA != <.1.> and DansPontA != <.2.>))))
+
 
 query node ((DansPontA == <.1.> and DansPontB == <.1.>) or (DansPontA == <.1.> and DansPontB == <.2.>)) // OKKKK 0 path
-
-query node (card(VehiculeA:(field[0] == 1)) != 1)
 
 
 query node ((card(DansPontA) > 0) and (card(DansPontB) > 0))
@@ -38,5 +40,5 @@ query node ((card(DansPontA)==1) and (card(DansPontB)==1)) // okkk co' trace
 query node (AttenteAutorisationA == FiniA) // OK trace
 
 
-query node (card(DansPontA + DansPontB) > 1)
+query node ((card(DansPontA) + card(DansPontB)) == 2) // OK 0 path
 

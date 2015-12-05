@@ -11,6 +11,7 @@
 \usepackage{amsmath}
 \usepackage{bbm}
 \usepackage{graphicx}
+\usepackage{version}
 
 \newcommand{\latin}[1]{\textit{#1}}
 
@@ -155,26 +156,62 @@
 	\newpage
 	
 \section{Question 1.6}
+	Cette assemblage contient 22 places, 13 transitions et 55$  $ arcs.
 	
+	\begin{figure}[!htbp]
+		\includegraphics[width = 18cm]{allModel.png}
+		\caption{Assemblage.}
+	\end{figure}
+	\newpage
 	
+\section{Question 1.7}
+\subsubsection{Paramètres}
+	Pour faciliter des vérifications car ma machine prend un temps énorme pour résoudre les formules. J'ai choisi:
+	\begin{itemize}
+		\item $N_{Vaa} = 2$
+		\item $N_{Vab} = 2$
+		\item $Capa_p = 4$
+		\item $N_{Alt} = 3$
+	\end{itemize}
+	
+	$Capa_p$ doit être supérieur au nombre total de véhicules, car sinon la propriété P2 ne peut être vérifiée.
+
+\subsubsection{Vérification par CosyVerif4PN}
+	Pour vérifier la propriété P1, \textit{"Il n'y a pas de collision (i.e. deux véhicules circulants en sens inverse) sur le pont."}, j'ai utilisé les formules suivantes:
+	\begin{enumerate}
+		\item \textit{query node ((card(DansPontA) + card(DansPontB)) == 2)} (Fichier P1\_1.txt)
+		\item \textit{query node ((DansPontA == <.1.> and DansPontB == <.1.>) 
+			\\or (DansPontA == <.1.> and DansPontB == <.2.>))} (Fichier P1\_2.txt)
+		\item \textit{query node ((card(DansPontA)==1) and (card(DansPontB)==1))} (Fichier P1\_3.txt)
+	\end{enumerate}
+	
+		Pour vérifier la propriété P2, \textit{"Un véhicule qui arrive est certain de passer sur le pont à l'issue d'une durée bornée."}, j'ai utilisé les formules suivantes:
+		\begin{enumerate}
+		\item 
+			\textit{query verbose (AttenteAutorisationA==<.1.> and EG(DansPontA!=<.1.>))} (Fichier P2\_1.txt)
+		\item
+			\textit{query verbose (implies(AttenteAutorisationA==<.1.>, AF(DansPontA==<.1.>)) 
+			\\and implies(AttenteAutorisationA==<.2.>, AF(DansPontA==<.2.>)) 
+			\\and implies(AttenteAutorisationB==<.1.>, AF(DansPontB==<.1.>)) 
+			\\and implies(AttenteAutorisationB==<.2.>, AF(DansPontB==<.2.>)))} (Fichier P2\_2.txt)
+	\end{enumerate}
+	
+	Quelques formules pour les "autres propriétés triviales attendues":
+		\begin{enumerate}
+				\item \textit{query node ((card(VehiculeA) + card(AttenteAutorisationA) + card(DansPontA) + card(FiniA)) != 3)}. Le nombre de véhicules \textit{Vaa} reste constant. (Fichier P3\_1.txt)
+				\item \textit{query node (card(CapacitePont) > 5)}. La capacité du pont $Capa_p$ est constante.(Fichier P3\_2.txt)
+				\item \textit{query node (card(Budget) > 1)}. Il y a au plus 1 jeton dans la place \textbf{Budget} à la fois.(Fichier P3\_3.txt)
+				\item \textit{query node (card(Sens) > 1)}. Il y a au plus 1 jeton dans la place \textbf{Sens} à la fois.(Fichier P3\_4.txt)
+				\item \textit{query node (card(NaltVehicule) > 1)}. Il y a au plus 1 jeton dans la place \textbf{NaltVehicule} à la fois.(Fichier P3\_5.txt)
+		\end{enumerate}
+
+\section{Question 1.8}
+
+	
+\begin{comment}
 \begin{verbatim}
 query node ((card(DansPontA)==1) and (card(DansPontB)==1))
 
-
-
-	========================================================
-This service relies on the prod model checker developped
-at the Helsinki University of technology  (laboratory of
-computer  science,  http://www.tcs.hut.fi/Software/prod)
-========================================================
-
-Integration in CosyVerif by F. Kordon (UPMC, 2013)
-
-Installing Prod
-Installing gph2dot
-Installing model data for persistent storage
-PN syntax checker by X. Bonnaire 1992-1996, A. Diagne 1996-1997, I. Mounier 1993-2002, J.-L. Mounier 1998-2006
-Statistics for this net
 Number of places      22
 Number of Queues      0
 Number of Transitions 13
@@ -194,126 +231,10 @@ Number of nontrivial terminal strongly connected components: 1
 Evaluating the provided CTL formula
 0 paths
 Built set %1
-------------------------------------------------
 
-========================================================
-Service completed OK
-========================================================
-
-Debug information
-========================================================
-CosyVerif directory  -> /tmp/alligator-5454896919309414835
-Persostent directory -> /tmp/ProdInCosyVerif_f369dd251b6b1eac4a8afd256ef6d33b
-========================================================
-Execution trace follows below
-+ '[' '!' -f prod_model ']'
-+ echo 'PN syntax checker by X. Bonnaire 1992-1996, A. Diagne 1996-1997, I. Mounier 1993-2002, J.-L. Mounier 1998-2006'
-+ /tmp/ProdInCosyVerif_f369dd251b6b1eac4a8afd256ef6d33b/FkSandrine -s -i prod_8763807886865996390.cami -o camix_model
-+ '[' '!' -f .stats ']'
-++ wc -c
-++ grep colores .qualif
-+ CLASS=8
-+ sed -e s/://
-+ cat .stats
-+ echo 'Generating prod format'
-+ /tmp/ProdInCosyVerif_f369dd251b6b1eac4a8afd256ef6d33b/matrice -s -i camix_model -m rdp_matrix -p prod_model.net
-++ tr -s ' '
-++ cut -d ' ' -f 2
-++ wc -l rdp_matrix
-+ CHECK=rdp_matrix
-+ '[' rdp_matrix = 0 ']'
-++ grep NAME_NOT_IDENTIFIER matrice_output
-+ '[' '' ']'
-+ '[' -f prod_model.gph ']'
-+ echo 'Generating and compiling code for the model'
-+ prod prod_model.init
-+ '[' -f prod_model ']'
-+ echo 'Generating the state space (this may take a while;-)'
-+ ./prod_model -m 1024000
-
-./prod_model.aws is used directly
-
-./prod_model.gph is used directly
-
-./prod_model.adr is used directly
-+ echo statistics
-+ strong prod_model
-+ sed -e s/.#//g
-+ probe prod_model
-+ echo ---
-+ echo 'Statistics about the reachability graph provided by prod are shown below'
-+ cat statistics.data
-+ echo 'Evaluating the provided CTL formula'
-+ cat ctl.prb prod_801592428106530532.ctlprod
-+ sed -e 's/.*#//g'
-+ probe prod_model
-+ cat prod_formula_result
-
-query node (AttenteAutorisationA == FiniA) // OK trace
-
-========================================================
-This service relies on the prod model checker developped
-at the Helsinki University of technology  (laboratory of
-computer  science,  http://www.tcs.hut.fi/Software/prod)
-========================================================
-
-Integration in CosyVerif by F. Kordon (UPMC, 2013)
-
-Prod binaries checked OK
-Gph2dot checked OK
-Reachability Graph already computed, retrieving data
----
-Statistics about the reachability graph provided by prod are shown below
-Number of nodes: 283688
-Number of arrows: 1033700
-Number of terminal nodes: 0
-Number of nodes that have been completely processed: 283688
-Number of strongly connected components: 229305
-Number of nontrivial terminal strongly connected components: 1
-Evaluating the provided CTL formula
-
-
-26672 paths
-Built set %1
-------------------------------------------------
-
-========================================================
-Service completed OK
-========================================================
-
-Debug information
-========================================================
-CosyVerif directory  -> /tmp/alligator-2047358861068064411
-Persostent directory -> /tmp/ProdInCosyVerif_f369dd251b6b1eac4a8afd256ef6d33b
-========================================================
-Execution trace follows below
-+ '[' '!' -f prod_model ']'
-+ '[' -f prod_model.gph ']'
-+ echo 'Reachability Graph already computed, retrieving data'
-+ echo ---
-+ echo 'Statistics about the reachability graph provided by prod are shown below'
-+ sed -e s/0#// statistics.data
-+ echo 'Evaluating the provided CTL formula'
-+ cat ctl.prb prod_1231987064332949103.ctlprod
-+ sed -e 's/.*#//g'
-+ probe prod_model
-+ cat prod_formula_result
 
 query node (card(Sens) == 2) // oK 0 path
 
-
-========================================================
-This service relies on the prod model checker developped
-at the Helsinki University of technology  (laboratory of
-computer  science,  http://www.tcs.hut.fi/Software/prod)
-========================================================
-
-Integration in CosyVerif by F. Kordon (UPMC, 2013)
-
-Prod binaries checked OK
-Gph2dot checked OK
-Reachability Graph already computed, retrieving data
----
 Statistics about the reachability graph provided by prod are shown below
 Number of nodes: 283688
 Number of arrows: 1033700
@@ -324,95 +245,10 @@ Number of nontrivial terminal strongly connected components: 1
 Evaluating the provided CTL formula
 0 paths
 Built set %1
-------------------------------------------------
-
-========================================================
-Service completed OK
-========================================================
-
-Debug information
-========================================================
-CosyVerif directory  -> /tmp/alligator-8223995637312865004
-Persostent directory -> /tmp/ProdInCosyVerif_f369dd251b6b1eac4a8afd256ef6d33b
-========================================================
-Execution trace follows below
-+ '[' '!' -f prod_model ']'
-+ '[' -f prod_model.gph ']'
-+ echo 'Reachability Graph already computed, retrieving data'
-+ echo ---
-+ echo 'Statistics about the reachability graph provided by prod are shown below'
-+ sed -e s/0#// statistics.data
-+ echo 'Evaluating the provided CTL formula'
-+ cat ctl.prb prod_1904795993131222933.ctlprod
-+ sed -e 's/.*#//g'
-+ probe prod_model
-+ cat prod_formula_result
-
-
-query node ((card(FiniA) == 2) and (card(FiniB) == 2)) // OK
-
-========================================================
-This service relies on the prod model checker developped
-at the Helsinki University of technology  (laboratory of
-computer  science,  http://www.tcs.hut.fi/Software/prod)
-========================================================
-
-Integration in CosyVerif by F. Kordon (UPMC, 2013)
-
-Prod binaries checked OK
-Gph2dot checked OK
-Reachability Graph already computed, retrieving data
----
-Statistics about the reachability graph provided by prod are shown below
-Number of nodes: 283688
-Number of arrows: 1033700
-Number of terminal nodes: 0
-Number of nodes that have been completely processed: 283688
-Number of strongly connected components: 229305
-Number of nontrivial terminal strongly connected components: 1
-Evaluating the provided CTL formula
-
-40 paths
-Built set %1
-------------------------------------------------
-
-========================================================
-Service completed OK
-========================================================
-
-Debug information
-========================================================
-CosyVerif directory  -> /tmp/alligator-8573433729245045077
-Persostent directory -> /tmp/ProdInCosyVerif_f369dd251b6b1eac4a8afd256ef6d33b
-========================================================
-Execution trace follows below
-+ '[' '!' -f prod_model ']'
-+ '[' -f prod_model.gph ']'
-+ echo 'Reachability Graph already computed, retrieving data'
-+ echo ---
-+ echo 'Statistics about the reachability graph provided by prod are shown below'
-+ sed -e s/0#// statistics.data
-+ echo 'Evaluating the provided CTL formula'
-+ cat ctl.prb prod_2927488966804921096.ctlprod
-+ sed -e 's/.*#//g'
-+ probe prod_model
-+ cat prod_formula_result
 
 
 query node ((DansPontA == <.1.> and DansPontB == <.1.>) or (DansPontA == <.1.> and DansPontB == <.2.>)) // OKKKK 0 path
 
-========================================================
-This service relies on the prod model checker developped
-at the Helsinki University of technology  (laboratory of
-computer  science,  http://www.tcs.hut.fi/Software/prod)
-========================================================
-
-Integration in CosyVerif by F. Kordon (UPMC, 2013)
-
-Prod binaries checked OK
-Gph2dot checked OK
-Reachability Graph already computed, retrieving data
----
 Statistics about the reachability graph provided by prod are shown below
 Number of nodes: 283688
 Number of arrows: 1033700
@@ -423,32 +259,8 @@ Number of nontrivial terminal strongly connected components: 1
 Evaluating the provided CTL formula
 0 paths
 Built set %1
-------------------------------------------------
-
-========================================================
-Service completed OK
-========================================================
-
-Debug information
-========================================================
-CosyVerif directory  -> /tmp/alligator-6888013607560646498
-Persostent directory -> /tmp/ProdInCosyVerif_f369dd251b6b1eac4a8afd256ef6d33b
-========================================================
-Execution trace follows below
-+ '[' '!' -f prod_model ']'
-+ '[' -f prod_model.gph ']'
-+ echo 'Reachability Graph already computed, retrieving data'
-+ echo ---
-+ echo 'Statistics about the reachability graph provided by prod are shown below'
-+ sed -e s/0#// statistics.data
-+ echo 'Evaluating the provided CTL formula'
-+ cat ctl.prb prod_3538640120971840321.ctlprod
-+ sed -e 's/.*#//g'
-+ probe prod_model
-+ cat prod_formula_result
-
 
 \end{verbatim}	
-	
+\end{comment}
 \end{document}
 
