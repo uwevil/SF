@@ -9,6 +9,7 @@ query node (card(CapacitePont) == 1)
 query node (card(Budget) == 1)
 query node (card(Sens) > 1) // OK no path
 query node ((card(Sens) != 1) and (card(Sens) != 0))
+query node (card(Sens) > 1)
 
 
 query node (card(VehiculeA) == 1) // OK 4 paths 0, 2, 3, 6
@@ -30,7 +31,11 @@ query node (card(B1) > 1)
 query node ((card(DansPontA) > 0) and (card(DansPontB) > 0))
 query node ((card(VehiculeEntrerA) > 0) and (card(VehiculeEntrerB) > 0))
 
-query node (card(DansPontA)==1) and (card(DansPontB)==1)
+query node ((card(DansPontA)==1) and (card(DansPontB)==1)) // okkk co' trace
+
+query node (AttenteAutorisationA == FiniA) // OK trace
+
+
 query node (card(DansPontA + DansPontB) > 1)
 
 

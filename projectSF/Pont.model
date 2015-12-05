@@ -2,18 +2,17 @@
 <model xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='http://coloane.lip6.fr/resources/schemas/model.xsd' formalism='Colored Petri Net' xposition='0' yposition='0'>
 <attributes>
 <attribute name='note' xposition='0' yposition='0'>Designed with Coloane</attribute>
-<attribute name='title' xposition='340' yposition='0'>All</attribute>
-<attribute name='declaration' xposition='0' yposition='0'>Class 
+<attribute name='title' xposition='340' yposition='0'>Pont</attribute>
+<attribute name='declaration' xposition='98' yposition='69'>Class 
 	Direction is 1..2;
-	Vaa is 0..5;
-	Vab is 0..5;
-	Pont is 0..7;
+	Vaa is 0..2;
+	Vab is 0..2;
+	Pont is 0..4;
 	TimeOut is 0..3;
 	Nalt is 0..3;
 Domain
 	DirectionVaaPont is &lt;Direction, Vaa, Pont&gt;;
 	DirectionVabPont is &lt;Direction, Vab, Pont&gt;;
-	DirectionPont is &lt;Direction, Pont&gt;;
 Var 
 	d in Direction;
 	a in Vaa;
@@ -24,157 +23,46 @@ Var
 <attribute name='version' xposition='14' yposition='271'>0,0</attribute>
 </attributes>
 <nodes>
-<node nodetype='place' id ='3' xposition='351' yposition='241' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='3' xposition='561' yposition='85' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='domain' xposition='299' yposition='279'>Pont</attribute>
-<attribute name='name' xposition='258' yposition='267'>CapaciteControlleur</attribute>
+<attribute name='domain' xposition='468' yposition='111'>Pont</attribute>
+<attribute name='name' xposition='414' yposition='86'>CapaciteControlleur</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='4' xposition='842' yposition='445' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='4' xposition='692' yposition='172' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='domain' xposition='844' yposition='486'>Pont</attribute>
-<attribute name='name' xposition='815' yposition='466'>OKControlleurB</attribute>
+<attribute name='marking' xposition='685' yposition='129'>&lt;Pont.all&gt;</attribute>
+<attribute name='domain' xposition='687' yposition='110'>Pont</attribute>
+<attribute name='name' xposition='663' yposition='86'>CapacitePont</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='5' xposition='238' yposition='445' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='5' xposition='562' yposition='264' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='domain' xposition='199' yposition='486'>Pont</attribute>
-<attribute name='name' xposition='164' yposition='466'>OKControlleurA</attribute>
+<attribute name='domain' xposition='468' yposition='278'>Pont</attribute>
+<attribute name='name' xposition='464' yposition='265'>OKPont</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='6' xposition='505' yposition='573' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='transition' id ='6' xposition='557' yposition='176' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='domain' xposition='497' yposition='616'>Pont</attribute>
-<attribute name='name' xposition='475' yposition='596'>PontLibre</attribute>
-</attributes>
-</node>
-<node nodetype='place' id ='7' xposition='502' yposition='161' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-<attribute name='marking' xposition='468' yposition='142'>&lt;Pont.7&gt;</attribute>
-<attribute name='domain' xposition='467' yposition='121'>Pont</attribute>
-<attribute name='name' xposition='462' yposition='103'>CapacitePont</attribute>
-</attributes>
-</node>
-<node nodetype='place' id ='8' xposition='503' yposition='307' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-<attribute name='domain' xposition='461' yposition='308'>Pont</attribute>
-<attribute name='name' xposition='457' yposition='289'>Pause</attribute>
-</attributes>
-</node>
-<node nodetype='place' id ='9' xposition='238' yposition='372' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-<attribute name='domain' xposition='233' yposition='414'>DirectionPont</attribute>
-<attribute name='name' xposition='216' yposition='396'>VehiculeEntrerA</attribute>
-</attributes>
-</node>
-<node nodetype='transition' id ='10' xposition='498' yposition='245' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-<attribute name='name' xposition='528' yposition='223'>notifieCapacite</attribute>
-</attributes>
-</node>
-<node nodetype='transition' id ='11' xposition='385' yposition='376' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-<attribute name='name' xposition='336' yposition='345'>okEntrerA</attribute>
-</attributes>
-</node>
-<node nodetype='transition' id ='12' xposition='500' yposition='521' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-<attribute name='name' xposition='436' yposition='518'>okSortir</attribute>
-</attributes>
-</node>
-<node nodetype='place' id ='13' xposition='505' yposition='445' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-<attribute name='domain' xposition='445' yposition='466'>Pont</attribute>
-<attribute name='name' xposition='409' yposition='446'>AttenteVehicule</attribute>
-</attributes>
-</node>
-<node nodetype='transition' id ='14' xposition='628' yposition='376' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-<attribute name='name' xposition='629' yposition='345'>okEntrerB</attribute>
-</attributes>
-</node>
-<node nodetype='place' id ='15' xposition='842' yposition='372' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-<attribute name='domain' xposition='884' yposition='382'>DirectionPont</attribute>
-<attribute name='name' xposition='862' yposition='357'>VehiculeEntrerB</attribute>
-</attributes>
-</node>
-<node nodetype='place' id ='16' xposition='615' yposition='517' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-<attribute name='domain' xposition='635' yposition='527'>Pont</attribute>
-<attribute name='name' xposition='635' yposition='512'>EpuisePont</attribute>
+<attribute name='guard' xposition='487' yposition='186'>[p&gt;Pont.0]</attribute>
+<attribute name='name' xposition='468' yposition='166'>notifieCapacite</attribute>
 </attributes>
 </node>
 </nodes>
 <arcs>
-<arc arctype='arc' id='17' startid='12' endid='16' color='#000000' curved='true'>
+<arc arctype='arc' id='7' startid='4' endid='6' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='557' yposition='518'>&lt;p&gt;</attribute>
+<attribute name='valuation' xposition='603' yposition='173'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='18' startid='7' endid='10' color='#000000' curved='true'>
+<arc arctype='arc' id='8' startid='6' endid='5' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='498' yposition='223'>&lt;p&gt;</attribute>
+<attribute name='valuation' xposition='557' yposition='210'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
-<arc arctype='arc' id='19' startid='10' endid='8' color='#000000' curved='true'>
+<arc arctype='arc' id='9' startid='6' endid='3' color='#000000' curved='true'>
 <attributes>
-<attribute name='valuation' xposition='498' yposition='279'>&lt;p&gt;</attribute>
-</attributes>
-</arc>
-<arc arctype='arc' id='20' startid='8' endid='11' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='413' yposition='357'>&lt;p&gt;</attribute>
-</attributes>
-</arc>
-<arc arctype='arc' id='21' startid='11' endid='13' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='462' yposition='426'>&lt;p&gt;</attribute>
-</attributes>
-</arc>
-<arc arctype='arc' id='22' startid='13' endid='12' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='501' yposition='492'>&lt;p&gt;</attribute>
-</attributes>
-</arc>
-<arc arctype='arc' id='23' startid='11' endid='9' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='266' yposition='373'>&lt;d, p&gt;</attribute>
-</attributes>
-</arc>
-<arc arctype='arc' id='24' startid='6' endid='12' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='502' yposition='542'>&lt;p&gt;</attribute>
-</attributes>
-</arc>
-<arc arctype='arc' id='25' startid='10' endid='3' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='386' yposition='242'>&lt;p&gt;</attribute>
-</attributes>
-</arc>
-<arc arctype='arc' id='26' startid='5' endid='11' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='351' yposition='388'>&lt;p&gt;</attribute>
-</attributes>
-</arc>
-<arc arctype='arc' id='27' startid='8' endid='14' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='598' yposition='357'>&lt;p&gt;</attribute>
-</attributes>
-</arc>
-<arc arctype='arc' id='28' startid='4' endid='14' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='674' yposition='388'>&lt;p&gt;</attribute>
-</attributes>
-</arc>
-<arc arctype='arc' id='29' startid='14' endid='15' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='800' yposition='373'>&lt;d, p&gt;</attribute>
-</attributes>
-</arc>
-<arc arctype='arc' id='30' startid='14' endid='13' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='534' yposition='426'>&lt;p&gt;</attribute>
+<attribute name='valuation' xposition='557' yposition='147'>&lt;p&gt;</attribute>
 </attributes>
 </arc>
 </arcs>
