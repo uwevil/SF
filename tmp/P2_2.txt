@@ -1,0 +1,1 @@
+query node (implies(AttenteAutorisationA==<.1.>, AF(DansPontA==<.1.>)) and implies(AttenteAutorisationA==<.2.>, AF(DansPontA==<.2.>)) and implies(AttenteAutorisationB==<.1.>, AF(DansPontB==<.1.>)) and implies(AttenteAutorisationB==<.2.>, AF(DansPontB==<.2.>)))

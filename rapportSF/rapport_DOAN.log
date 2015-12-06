@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.10.7)  5 DEC 2015 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.10.7)  6 DEC 2015 15:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -693,9 +693,18 @@ l.67 \chapter
 
 ]
 Chapitre 2.
-[2
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 71.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [2
 
-] <vaaModel.png, id=80, 763.85374pt x 650.43pt>
+]
+<vaaModel.png, id=81, 763.85374pt x 650.43pt>
 File: vaaModel.png Graphic file (type png)
  <use vaaModel.png>
 Package pdftex.def Info: vaaModel.png used on input line 111.
@@ -710,24 +719,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3] [4 <./vaaModel.png>] <vabModel.png, id=93, 718.685pt x 637.38126pt>
+[3] [4 <./vaaModel.png>] <vabModel.png, id=94, 718.685pt x 637.38126pt>
 File: vabModel.png Graphic file (type png)
 
 <use vabModel.png>
 Package pdftex.def Info: vabModel.png used on input line 125.
 (pdftex.def)             Requested size: 426.79134pt x 378.52199pt.
  [5 <./vabModel.png>]
-<pontModel.png, id=100, 694.595pt x 342.27875pt>
+<pontModel.png, id=101, 694.595pt x 342.27875pt>
 File: pontModel.png Graphic file (type png)
  <use pontModel.png>
 Package pdftex.def Info: pontModel.png used on input line 138.
 (pdftex.def)             Requested size: 426.79134pt x 210.31998pt.
- [6 <./pontModel.png>] <ctrlpModel.png, id=108, 1218.5525pt x 961.5925pt>
+ [6 <./pontModel.png>] <ctrlpModel.png, id=109, 1232.605pt x 966.61125pt>
 File: ctrlpModel.png Graphic file (type png)
 
 <use ctrlpModel.png>
 Package pdftex.def Info: ctrlpModel.png used on input line 153.
-(pdftex.def)             Requested size: 512.1496pt x 404.15955pt.
+(pdftex.def)             Requested size: 512.1496pt x 401.63768pt.
 
 Overfull \hbox (30.27414pt too wide) in paragraph at lines 153--154
 [][] 
@@ -765,44 +774,39 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 159.
 
-<allModel.png, id=115, 1422.31375pt x 1084.05pt>
+<allModel.png, id=116, 1424.32124pt x 1091.07625pt>
 File: allModel.png Graphic file (type png)
  <use allModel.png>
-Package pdftex.def Info: allModel.png used on input line 162.
-(pdftex.def)             Requested size: 512.1496pt x 390.35695pt.
+Package pdftex.def Info: allModel.png used on input line 167.
+(pdftex.def)             Requested size: 512.1496pt x 392.321pt.
 
-Overfull \hbox (30.27414pt too wide) in paragraph at lines 162--163
+Overfull \hbox (30.27414pt too wide) in paragraph at lines 167--168
 [][] 
  []
 
 [8 <./allModel.png>]
-Overfull \hbox (1.19484pt too wide) in paragraph at lines 191--193
-[]\T1/lmr/m/it/10.95 (-20) query ver-bose (At-ten-teAu-to-ri-sa-tionA==<.1.> an
-d EG(DansPontA!=<.1.>)) \T1/lmr/m/n/10.95 (-20) (Fi-chier P2_1.txt) 
- []
-
-
-Overfull \hbox (13.68109pt too wide) in paragraph at lines 201--202
+Overfull \hbox (13.68109pt too wide) in paragraph at lines 200--201
 []\T1/lmr/m/it/10.95 (-20) query node ((card(VehiculeA) + card(AttenteAutorisat
 ionA) + card(DansPontA) + card(FiniA))!=
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
 [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 212.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 212.
  (./rapport_DOAN.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 265.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 265.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 212.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 212.
 Package rerunfilecheck Info: File `rapport_DOAN.out' has not changed.
-(rerunfilecheck)             Checksum: 14E41F16E9AC55BD3C2B846643F999C7;792.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
+(rerunfilecheck)             Checksum: 8AB565374C54A8EC3DE1BC5F7635A4FF;793.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 212.
  ) 
 Here is how much of TeX's memory you used:
- 9085 strings out of 493117
- 135718 string characters out of 6135433
- 261845 words of memory out of 5000000
- 12268 multiletter control sequences out of 15000+600000
- 74844 words of font info for 90 fonts, out of 8000000 for 9000
+ 9129 strings out of 493117
+ 136431 string characters out of 6135433
+ 262845 words of memory out of 5000000
+ 12307 multiletter control sequences out of 15000+600000
+ 75069 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,10n,43p,815b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/
@@ -815,11 +819,12 @@ m/lmbxi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmcsc10
 /local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texl
 ive/2014/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2014/te
 xmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2014/texmf-dist/f
-onts/type1/public/lm/lmri12.pfb>
-Output written on rapport_DOAN.pdf (10 pages, 1097956 bytes).
+onts/type1/public/lm/lmri12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
+/public/lm/lmtt10.pfb>
+Output written on rapport_DOAN.pdf (11 pages, 1122588 bytes).
 PDF statistics:
- 189 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
+ 196 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
  43 named destinations out of 1000 (max. 500000)
- 17546 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 18058 words of extra memory for PDF output out of 20736 (max. 10000000)
 

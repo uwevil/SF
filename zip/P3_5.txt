@@ -1,0 +1,1 @@
+query node (card(NaltVehicule) > 1)

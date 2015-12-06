@@ -62,7 +62,7 @@ Var
 <node nodetype='place' id ='9' xposition='1013' yposition='667' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
 <attribute name='domain' xposition='1033' yposition='677'>Direction</attribute>
-<attribute name='name' xposition='1033' yposition='662'>AttentB</attribute>
+<attribute name='name' xposition='1033' yposition='662'>AttenteB</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='10' xposition='617' yposition='722' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>

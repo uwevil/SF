@@ -1,0 +1,1 @@
+query node (AG(implies(AttenteAutorisationA==<.1.>, AF(DansPontA:field[1]==<.1.>))))

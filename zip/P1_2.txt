@@ -1,0 +1,1 @@
+query node ((DansPontA == <.1.> and DansPontB == <.1.>) or (DansPontA == <.1.> and DansPontB == <.2.>))

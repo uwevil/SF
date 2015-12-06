@@ -1,0 +1,1 @@
+query node ((card(VehiculeA) + card(AttenteAutorisationA) + card(DansPontA) + card(FiniA)) != 3)

@@ -1,0 +1,1 @@
+query node ((AttenteAutorisationA==<.1.> and EG(DansPontA!=<.1.>)) or (AttenteAutorisationA==<.2.> and EG(DansPontA!=<.2.>)) or (AttenteAutorisationB==<.1.> and EG(DansPontB!=<.1.>)) or (AttenteAutorisationB==<.2.> and EG(DansPontB!=<.2.>)))

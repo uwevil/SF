@@ -1,0 +1,1 @@
+query node ((card(DansPontA)==1) and (card(DansPontB)==1))
