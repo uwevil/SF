@@ -7,9 +7,9 @@
 	Direction is 1..2;
 	Vaa is 0..2;
 	Vab is 0..2;
-	Pont is 0..2;
-	TimeOut is 0..2;
-	Nalt is 0..2;
+	Pont is 0..4;
+	TimeOut is 0..3;
+	Nalt is 0..3;
 Domain
 	DirectionVaaPont is &lt;Direction, Vaa, Pont&gt;;
 	DirectionVabPont is &lt;Direction, Vab, Pont&gt;;
@@ -102,7 +102,7 @@ Var
 </node>
 <node nodetype='place' id ='16' xposition='743' yposition='616' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='marking' xposition='672' yposition='650'>&lt;Nalt.2&gt;</attribute>
+<attribute name='marking' xposition='672' yposition='650'>&lt;Nalt.3&gt;</attribute>
 <attribute name='domain' xposition='692' yposition='634'>Nalt</attribute>
 <attribute name='name' xposition='663' yposition='618'>NaltVehicule</attribute>
 </attributes>
@@ -166,7 +166,7 @@ and n&gt;Nalt.0]</attribute>
 </node>
 <node nodetype='place' id ='26' xposition='743' yposition='192' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='marking' xposition='679' yposition='134'>&lt;TimeOut.2&gt;</attribute>
+<attribute name='marking' xposition='679' yposition='134'>&lt;TimeOut.3&gt;</attribute>
 <attribute name='domain' xposition='691' yposition='113'>TimeOut</attribute>
 <attribute name='name' xposition='702' yposition='89'>Budget</attribute>
 </attributes>
@@ -400,7 +400,7 @@ or t=TimeOut.0]</attribute>
 <arc arctype='arc' id='67' startid='36' endid='16' color='#000000' curved='true'>
 <pi xposition='910' yposition='398'/>
 <attributes>
-<attribute name='valuation' xposition='867' yposition='411'>&lt;Nalt.2&gt;</attribute>
+<attribute name='valuation' xposition='867' yposition='411'>&lt;Nalt.3&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='68' startid='26' endid='36' color='#000000' curved='true'>
@@ -411,7 +411,7 @@ or t=TimeOut.0]</attribute>
 <arc arctype='arc' id='69' startid='36' endid='26' color='#000000' curved='true'>
 <pi xposition='645' yposition='232'/>
 <attributes>
-<attribute name='valuation' xposition='627' yposition='227'>&lt;TimeOut.2&gt;</attribute>
+<attribute name='valuation' xposition='627' yposition='227'>&lt;TimeOut.3&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='70' startid='27' endid='23' color='#000000' curved='true'>
