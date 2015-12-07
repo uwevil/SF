@@ -65,6 +65,7 @@
 		\end{enumerate}
 	
 \chapter{Explication}
+	Je me constate que les jetons colorés ne sont pas bien exporter en format CAMI, par exemple, dans le modèle \textit{Controlleur(CTRLP)} la place \textbf{Budget}, domain \textbf{TimeOut}, j'ai initialisé avec le jeton \textit{<TimeOut.3>} mais quand j'exporte en format CAMI et ré-importe, cette place est initialisée avec un jeton \textit{<3>}. Du coup, les formules CTL ne marche pas car le coloane ne connaît pas le jeton \textit{<3>}. Donc, j'ai mis à côté des fichiers CAMI, des fichiers du type \textbf{.model}, grâce à ces fichiers vous pouvez importer directement le modèle (dans le coloane, \textbf{Import} $\rightarrow$ \textbf{File system}). En plus, j'ai mis aussi mon répertoire entier dans lequel je travaille pour vous faciliter votre travail (sous Mac). Merci de votre attention.
 \section{Question 1.1}
 \subsection{Vaa}
 	\begin{description}
@@ -203,11 +204,11 @@
 				\item \textit{query node (card(Sens) > 1)} : Il y a au plus 1 jeton dans la place \textbf{Sens} à la fois.(Fichier P3\_4.txt)
 				\item \textit{query node (card(NaltVehicule) > 1)} : Il y a au plus 1 jeton dans la place \textbf{NaltVehicule} à la fois.(Fichier P3\_5.txt)
 		\end{enumerate}
-
+	
 \section{Question 1.8}
 	Ce problème ressemble comme l'exclusion mutuelle. Le contrôlleur est comme un serveur central, c'est lui qui gère les accès au pont. Il faut spécifier un protocol de communication entre le contrôlleur et les véhicules. Ensuite, il faut avoir des capteurs sur le pont pour calculer sa capacité restante. En plus, il faut assurer que les véhicules ne passent pas sur le pont sans autorisation du contrôlleur.
 	
-	En terme d'algorithmique répartie, ce modèle est comme le système client-serveur. Le timeout et le nombre de véhicules d'un même type sont bornés, le serveur peut gérer 2 files FIFO de demandes, 1 pour côté A et1 pour côté B. La direction est changée régulièrement en un temps borné grâce au timeout et au nombre de véhicules d'un même type. Chaque véhicule qui sorte du pont doit signaler le contrôlleur. Donc, les 2 propriétés fondamentales du système sont vérifiées.
+	En terme d'algorithmique répartie, ce modèle est comme le système client-serveur. Le timeout et le nombre de véhicules d'un même type sont bornés, le serveur peut gérer 2 files FIFO de demandes, 1 pour côté A et 1 pour côté B. La direction est changée régulièrement en un temps borné grâce au timeout et au nombre de véhicules d'un même type. Chaque véhicule qui sorte du pont doit signaler le contrôlleur. Donc, les 2 propriétés fondamentales du système sont vérifiées. Lorsque la capacité du pont atteint, le contrôlleur bloque tous les véhicules quelque soit leurs types.
 
 \end{document}
 

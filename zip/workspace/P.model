@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<model xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='http://coloane.lip6.fr/resources/schemas/model.xsd' formalism='Colored Petri Net' xposition='0' yposition='0'>
+<attributes>
+<attribute name='note' xposition='0' yposition='0'>Designed with Coloane</attribute>
+<attribute name='title' xposition='340' yposition='0'>PModel</attribute>
+<attribute name='declaration' xposition='98' yposition='69'>Class 
+	Direction is 1..2;
+	Vaa is 0..2;
+	Vab is 0..2;
+	Pont is 0..4;
+	TimeOut is 0..3;
+	Nalt is 0..3;
+Domain
+	DirectionVaaPont is &lt;Direction, Vaa, Pont&gt;;
+	DirectionVabPont is &lt;Direction, Vab, Pont&gt;;
+Var 
+	d in Direction;
+	a in Vaa;
+	b in Vab;
+	p in Pont;
+	t in TimeOut;
+	n in Nalt;</attribute>
+<attribute name='version' xposition='14' yposition='271'>0,0</attribute>
+</attributes>
+<nodes>
+<node nodetype='place' id ='3' xposition='561' yposition='85' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='domain' xposition='468' yposition='111'>Pont</attribute>
+<attribute name='name' xposition='414' yposition='86'>CapaciteControlleur</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='4' xposition='692' yposition='172' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='marking' xposition='685' yposition='129'>&lt;Pont.all&gt;</attribute>
+<attribute name='domain' xposition='687' yposition='110'>Pont</attribute>
+<attribute name='name' xposition='663' yposition='86'>CapacitePont</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='5' xposition='562' yposition='264' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='domain' xposition='468' yposition='278'>Pont</attribute>
+<attribute name='name' xposition='464' yposition='265'>OKPont</attribute>
+</attributes>
+</node>
+<node nodetype='transition' id ='6' xposition='557' yposition='176' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='guard' xposition='487' yposition='186'>[p&gt;Pont.0]</attribute>
+<attribute name='name' xposition='468' yposition='166'>notifieCapacite</attribute>
+</attributes>
+</node>
+</nodes>
+<arcs>
+<arc arctype='arc' id='7' startid='4' endid='6' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='603' yposition='173'>&lt;p&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='8' startid='6' endid='5' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='557' yposition='210'>&lt;p&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='9' startid='6' endid='3' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='557' yposition='147'>&lt;p&gt;</attribute>
+</attributes>
+</arc>
+</arcs>
+<stickys>
+</stickys>
+</model>
